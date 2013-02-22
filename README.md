@@ -1,4 +1,3 @@
 Catalog-Android-Client
 ======================
-
-Repository for the Android Client of the Catalog project.
+The repository containing the Android client for the Miniature Bottle MVC Web Applictaion.
