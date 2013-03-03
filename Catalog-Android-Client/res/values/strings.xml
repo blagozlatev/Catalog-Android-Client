@@ -2,4 +2,10 @@
 
     <string name="app_name">Miniature Bottles</string>
 
+    <string name="add_bottle">Add Bottle</string>
+
+    <string name="show_bottle">Show Bottle</string>
+
+    <string name="show_all_bottles">Show All Bottles</string>
+
 </resources>

@@ -5,13 +5,21 @@
     android:orientation="vertical" >
 
     <Button
-        android:id="@+id/btnSearch"
+        android:id="@+id/btnAddBottle"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content" 
+        android:text="@string/add_bottle"/>
 
     <Button
-        android:id="@+id/btnShowAllBlocked"
+        android:id="@+id/btnShowBottle"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/show_bottle" />    
+    
+    <Button
+        android:id="@+id/btnShowAllBottles"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_all_bottles" />
 
 </LinearLayout>
