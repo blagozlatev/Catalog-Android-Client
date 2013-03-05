@@ -25,6 +25,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".AddBottleActivity"
+            android:label="@string/add_bottle"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ShowBottleActivity"
+            android:label="@string/add_bottle"
+            android:screenOrientation="portrait" >
+        </activity>
+		<activity
+            android:name=".ShowAllBottlesActivity"
+            android:label="@string/add_bottle"
+            android:screenOrientation="portrait" >
+        </activity>                
     </application>
 
 </manifest>
