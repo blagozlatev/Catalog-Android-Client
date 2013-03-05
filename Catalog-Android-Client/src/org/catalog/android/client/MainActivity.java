@@ -1,8 +1,6 @@
 package org.catalog.android.client;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +12,7 @@ public class MainActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
+		setContentView(R.layout.main_layout);
 
 		Button btnAddBottle = (Button) findViewById(R.id.btnAddBottle);
 		btnAddBottle.setOnClickListener(new OnClickListener() {

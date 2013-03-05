@@ -8,4 +8,38 @@
 
     <string name="show_all_bottles">Show All Bottles</string>
 
+    <string name="select_image">Select Image</string>
+
+    <string name="continent">Continent</string>
+
+    <string name="note">Note</string>
+
+    <string name="manufacturer">Manufacturer</string>
+
+    <string name="country">Country</string>
+
+    <string name="city">City</string>
+
+    <string name="material">Material</string>
+
+    <string name="colour">Colour</string>
+
+    <string name="shape">Shape</string>
+
+    <string name="name">Name</string>
+
+    <string name="shell">Shell</string>
+
+    <string name="age">Age</string>
+
+    <string name="content">Content</string>
+
+    <string name="alcohol">Alcohol</string>
+
+    <string name="alcohol_type">Alcohol Type</string>
+
+    <string name="id">ID</string>
+
+    <string name="bottle_image">Bottle Image</string>
+
 </resources>
