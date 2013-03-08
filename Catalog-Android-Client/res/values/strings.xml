@@ -42,4 +42,8 @@
 
     <string name="bottle_image">Bottle Image</string>
 
+    <string name="send_bottle">Send Bottle</string>
+
+    <string name="clear_fields">Clear Fields</string>
+
 </resources>

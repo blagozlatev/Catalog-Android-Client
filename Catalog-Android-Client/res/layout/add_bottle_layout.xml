@@ -112,6 +112,18 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/select_image" />
+
+        <Button
+            android:id="@+id/btnSendBottle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_bottle" />
+
+        <Button
+            android:id="@+id/btnClearFields"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_fields" />
     </LinearLayout>
 
 </ScrollView>

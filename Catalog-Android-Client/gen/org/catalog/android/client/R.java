@@ -14,10 +14,12 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int btnAddBottle=0x7f060011;
+        public static final int btnAddBottle=0x7f060013;
+        public static final int btnClearFields=0x7f060012;
         public static final int btnSelectImage=0x7f060010;
-        public static final int btnShowAllBottles=0x7f060013;
-        public static final int btnShowBottle=0x7f060012;
+        public static final int btnSendBottle=0x7f060011;
+        public static final int btnShowAllBottles=0x7f060015;
+        public static final int btnShowBottle=0x7f060014;
         public static final int imgBottleImage=0x7f06000f;
         public static final int txtAge=0x7f060004;
         public static final int txtAlcohol=0x7f060002;
@@ -49,6 +51,7 @@ public final class R {
         public static final int app_name=0x7f040000;
         public static final int bottle_image=0x7f040014;
         public static final int city=0x7f040009;
+        public static final int clear_fields=0x7f040016;
         public static final int colour=0x7f04000b;
         public static final int content=0x7f040010;
         public static final int continent=0x7f040005;
@@ -59,6 +62,7 @@ public final class R {
         public static final int name=0x7f04000d;
         public static final int note=0x7f040006;
         public static final int select_image=0x7f040004;
+        public static final int send_bottle=0x7f040015;
         public static final int shape=0x7f04000c;
         public static final int shell=0x7f04000e;
         public static final int show_all_bottles=0x7f040003;
