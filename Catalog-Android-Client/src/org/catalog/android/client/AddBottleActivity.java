@@ -1,19 +1,17 @@
 package org.catalog.android.client;
 
+import java.net.URI;
+import java.net.URISyntaxException;
+
 import org.catalog.constants.ImageConstants;
 import org.catalog.model.Bottle;
 import org.catalog.web.WebAppConnection;
 
 import android.app.Activity;
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.database.Cursor;
-import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
-import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
@@ -25,12 +23,13 @@ import android.widget.TextView;
 public class AddBottleActivity extends Activity {
 
 	private ImageView imgBottleImage;
-	private ProgressDialog dialog;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.add_bottle_layout);
+
+		// Handler activityHandler = new Handler(Looper.getMainLooper());
 
 		Button btnSelectImage = (Button) findViewById(R.id.btnSelectImage);
 		Button btnClearFields = (Button) findViewById(R.id.btnClearFields);
@@ -50,7 +49,7 @@ public class AddBottleActivity extends Activity {
 		final TextView txtNote = (TextView) findViewById(R.id.txtNote);
 		final TextView txtShape = (TextView) findViewById(R.id.txtShape);
 		final TextView txtShell = (TextView) findViewById(R.id.txtShell);
-		dialog = new ProgressDialog(getApplicationContext());
+		// dialog = new ProgressDialog(getApplicationContext());
 
 		imgBottleImage = (ImageView) findViewById(R.id.imgBottleImage);
 		btnSelectImage.setOnClickListener(new OnClickListener() {
@@ -107,30 +106,18 @@ public class AddBottleActivity extends Activity {
 				bottle.setNote(txtNote.getText().toString());
 				bottle.setShape(txtShape.getText().toString());
 				bottle.setShell(txtShell.getText().toString());
-				bottle.setPostUrl(Uri
-						.parse("http://bottlewebapp.apphb.com/Serialized/Post"));
+				try {
+					bottle.setPostUrl(new URI(
+							"http://bottlewebapp.apphb.com/Serialized/Post"));
+				} catch (URISyntaxException e) {
+					e.printStackTrace();
+				}
+
 				new Thread(new Runnable() {
 
 					@Override
 					public void run() {
-//						runOnUiThread(new Runnable() {
-//
-//							@Override
-//							public void run() {
-//								dialog.show(getApplicationContext(), "Wait",
-//										"Wait", true, false);
-//							}
-//						});
 						WebAppConnection.Connect(bottle);
-//						runOnUiThread(new Runnable() {
-//
-//							@Override
-//							public void run() {
-//								if (dialog.isShowing()) {
-//									dialog.cancel();
-//								}
-//							}
-//						});
 					}
 				}).start();
 			}

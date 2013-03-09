@@ -1,6 +1,6 @@
 package org.catalog.model;
 
-import android.net.Uri;
+import java.net.URI;
 
 public class Bottle {
 	private int ID;
@@ -18,7 +18,7 @@ public class Bottle {
 	private String Country;
 	private String Continent;
 	private String Note;
-	private Uri PostUrl;
+	private URI PostUrl;
 
 	public String ToString() {
 		return "ID: " + this.ID + "\n" + "Alcohol Type: " + this.AlcoholType
@@ -200,11 +200,11 @@ public class Bottle {
 		Note = note;
 	}
 
-	public Uri getPostUrl() {
+	public URI getPostUrl() {
 		return PostUrl;
 	}
 
-	public void setPostUrl(Uri postUrl) {
+	public void setPostUrl(URI postUrl) {
 		PostUrl = postUrl;
 	}
 }
