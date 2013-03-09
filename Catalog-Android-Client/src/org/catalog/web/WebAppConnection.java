@@ -13,20 +13,16 @@ import org.catalog.model.Bottle;
 
 public class WebAppConnection {
 
-	public static void Connect(Bottle b) {
+	public static void send(Bottle b) {
 		HttpClient httpclient = new DefaultHttpClient();
 		HttpPost httppost = new HttpPost(b.getPostUrl());
 
 		try {
 			HttpEntity entity = new StringEntity(Bottle.Serialize(b));
 			httppost.setEntity(entity);
-			// HttpResponse response;
-			// response =
 			httpclient.execute(httppost);
 		} catch (ClientProtocolException e) {
-			// TODO Auto-generated catch block
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 		}
 	}
 }

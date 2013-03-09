@@ -8,6 +8,7 @@ import org.catalog.model.Bottle;
 import org.catalog.web.WebAppConnection;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.BitmapFactory;
@@ -29,8 +30,6 @@ public class AddBottleActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.add_bottle_layout);
 
-		// Handler activityHandler = new Handler(Looper.getMainLooper());
-
 		Button btnSelectImage = (Button) findViewById(R.id.btnSelectImage);
 		Button btnClearFields = (Button) findViewById(R.id.btnClearFields);
 		Button btnSendBottle = (Button) findViewById(R.id.btnSendBottle);
@@ -49,7 +48,6 @@ public class AddBottleActivity extends Activity {
 		final TextView txtNote = (TextView) findViewById(R.id.txtNote);
 		final TextView txtShape = (TextView) findViewById(R.id.txtShape);
 		final TextView txtShell = (TextView) findViewById(R.id.txtShell);
-		// dialog = new ProgressDialog(getApplicationContext());
 
 		imgBottleImage = (ImageView) findViewById(R.id.imgBottleImage);
 		btnSelectImage.setOnClickListener(new OnClickListener() {
@@ -113,11 +111,39 @@ public class AddBottleActivity extends Activity {
 					e.printStackTrace();
 				}
 
+				//New thread for the connecting operation.				
 				new Thread(new Runnable() {
+					ProgressDialog dialog = new ProgressDialog(
+							AddBottleActivity.this);
 
 					@Override
 					public void run() {
-						WebAppConnection.Connect(bottle);
+						//Start the indeterminate dialog.
+						AddBottleActivity.this.runOnUiThread(new Runnable() {
+
+							@Override
+							public void run() {
+								dialog.setCancelable(false);
+								dialog.setIndeterminate(false);
+								dialog.setTitle("Sending!");
+								dialog.setMessage("Sending to server!");
+								dialog.show();
+							}
+						});
+
+						//Sending the bottle to the bottlewebapp.apphb.com.
+						WebAppConnection.send(bottle);
+
+						//Closing the indeterminate dialog.
+						AddBottleActivity.this.runOnUiThread(new Runnable() {
+
+							@Override
+							public void run() {
+								if (dialog.isShowing()) {
+									dialog.cancel();
+								}
+							}
+						});
 					}
 				}).start();
 			}
