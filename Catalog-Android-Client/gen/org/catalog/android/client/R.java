@@ -21,6 +21,7 @@ public final class R {
         public static final int btnShowAllBottles=0x7f070015;
         public static final int btnShowBottle=0x7f070014;
         public static final int imgBottleImage=0x7f07000f;
+        public static final int imgShowBottleImage=0x7f070025;
         public static final int txtAge=0x7f070004;
         public static final int txtAlcohol=0x7f070002;
         public static final int txtAlcoholType=0x7f070001;
@@ -36,6 +37,21 @@ public final class R {
         public static final int txtNote=0x7f07000d;
         public static final int txtShape=0x7f070007;
         public static final int txtShell=0x7f070005;
+        public static final int txtViewAge=0x7f07001a;
+        public static final int txtViewAlcohol=0x7f070018;
+        public static final int txtViewAlcoholType=0x7f070017;
+        public static final int txtViewCity=0x7f070021;
+        public static final int txtViewColour=0x7f07001e;
+        public static final int txtViewContent=0x7f070019;
+        public static final int txtViewContinent=0x7f070024;
+        public static final int txtViewCountry=0x7f070022;
+        public static final int txtViewId=0x7f070016;
+        public static final int txtViewManufacturer=0x7f070020;
+        public static final int txtViewMaterial=0x7f07001f;
+        public static final int txtViewName=0x7f07001c;
+        public static final int txtViewNote=0x7f070023;
+        public static final int txtViewShape=0x7f07001d;
+        public static final int txtViewShell=0x7f07001b;
     }
     public static final class integer {
         public static final int image_quality=0x7f040003;
@@ -59,6 +75,7 @@ public final class R {
         public static final int bottle_add_failed=0x7f05001f;
         public static final int bottle_add_succeed=0x7f050021;
         public static final int bottle_image=0x7f050014;
+        public static final int cancel=0x7f050025;
         public static final int city=0x7f050009;
         public static final int clear_fields=0x7f050016;
         public static final int colour=0x7f05000b;
@@ -66,6 +83,7 @@ public final class R {
         public static final int continent=0x7f050005;
         public static final int country=0x7f050008;
         public static final int denied=0x7f050017;
+        public static final int enter_bottle_id=0x7f050026;
         public static final int error=0x7f05001b;
         public static final int id=0x7f050013;
         public static final int manufacturer=0x7f050007;
@@ -75,6 +93,7 @@ public final class R {
         public static final int ok=0x7f05001d;
         public static final int one=0x7f050019;
         public static final int parse_error_message=0x7f05001c;
+        public static final int please_enter_bottle_id=0x7f050027;
         public static final int select_image=0x7f050004;
         public static final int select_image_intent_type=0x7f050024;
         public static final int send_bottle=0x7f050015;
@@ -86,7 +105,7 @@ public final class R {
         public static final int show_all_bottles=0x7f050003;
         public static final int show_bottle=0x7f050002;
         public static final int url_web_app=0x7f05001a;
-        public static final int url_web_app_image=0x7f050025;
+        public static final int url_web_app_image=0x7f050028;
         public static final int zero=0x7f050018;
     }
     public static final class style {
