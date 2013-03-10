@@ -1,49 +1,27 @@
 <resources>
 
     <string name="app_name">Miniature Bottles</string>
-
     <string name="add_bottle">Добави бутилка</string>
-
     <string name="show_bottle">Покажи бутилка</string>
-
     <string name="show_all_bottles">Покажи всички бутилки</string>
-
     <string name="select_image">Избери изображение</string>
-
     <string name="continent">Континент</string>
-
     <string name="note">Бележка</string>
-
     <string name="manufacturer">Производител</string>
-
     <string name="country">Държава</string>
-
     <string name="city">Град</string>
-
     <string name="material">Материал</string>
-
     <string name="colour">Цвят</string>
-
     <string name="shape">Форма</string>
-
     <string name="name">Име</string>
-
     <string name="shell">Обвивка</string>
-
     <string name="age">Възраст</string>
-
     <string name="content">Съдържание</string>
-
     <string name="alcohol">Алкохол</string>
-
     <string name="alcohol_type">Вид алкохол</string>
-
     <string name="id">Идентификационен номер</string>
-
     <string name="bottle_image">Изображение на бутилката</string>
-
     <string name="send_bottle">Изпрати бутилка</string>
-
     <string name="clear_fields">Изчисти полетата</string>
     <string name="denied">d</string>
     <string name="zero">0</string>
@@ -59,5 +37,6 @@
     <string name="sending">Изпраща се!</string>
     <string name="sending_message">Пращане към сървъра!</string>
     <string name="select_image_intent_type">image/*</string>
+    <string name="url_web_app_image">http://bottlewebapp.apphb.com/Serialized/PostImage/</string>
 
 </resources>

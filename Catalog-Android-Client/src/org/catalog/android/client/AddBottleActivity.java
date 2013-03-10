@@ -4,6 +4,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 import org.catalog.model.Bottle;
+import org.catalog.model.BottleImage;
 import org.catalog.web.WebAppConnection;
 
 import android.app.Activity;
@@ -14,6 +15,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -21,7 +23,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.EditText;
 
 public class AddBottleActivity extends Activity {
 
@@ -35,23 +37,23 @@ public class AddBottleActivity extends Activity {
 		Button btnSelectImage = (Button) findViewById(R.id.btnSelectImage);
 		Button btnClearFields = (Button) findViewById(R.id.btnClearFields);
 		Button btnSendBottle = (Button) findViewById(R.id.btnSendBottle);
-		final TextView txtAge = (TextView) findViewById(R.id.txtAge);
-		final TextView txtAlcohol = (TextView) findViewById(R.id.txtAlcohol);
-		final TextView txtAlcoholType = (TextView) findViewById(R.id.txtAlcoholType);
-		final TextView txtCity = (TextView) findViewById(R.id.txtCity);
-		final TextView txtColour = (TextView) findViewById(R.id.txtColour);
-		final TextView txtContent = (TextView) findViewById(R.id.txtContent);
-		final TextView txtContinent = (TextView) findViewById(R.id.txtContinent);
-		final TextView txtCountry = (TextView) findViewById(R.id.txtCountry);
-		final TextView txtId = (TextView) findViewById(R.id.txtId);
-		final TextView txtManufacturer = (TextView) findViewById(R.id.txtManufacturer);
-		final TextView txtMaterial = (TextView) findViewById(R.id.txtMaterial);
-		final TextView txtName = (TextView) findViewById(R.id.txtName);
-		final TextView txtNote = (TextView) findViewById(R.id.txtNote);
-		final TextView txtShape = (TextView) findViewById(R.id.txtShape);
-		final TextView txtShell = (TextView) findViewById(R.id.txtShell);
-
+		final EditText txtAge = (EditText) findViewById(R.id.txtAge);
+		final EditText txtAlcohol = (EditText) findViewById(R.id.txtAlcohol);
+		final EditText txtAlcoholType = (EditText) findViewById(R.id.txtAlcoholType);
+		final EditText txtCity = (EditText) findViewById(R.id.txtCity);
+		final EditText txtColour = (EditText) findViewById(R.id.txtColour);
+		final EditText txtContent = (EditText) findViewById(R.id.txtContent);
+		final EditText txtContinent = (EditText) findViewById(R.id.txtContinent);
+		final EditText txtCountry = (EditText) findViewById(R.id.txtCountry);
+		final EditText txtId = (EditText) findViewById(R.id.txtId);
+		final EditText txtManufacturer = (EditText) findViewById(R.id.txtManufacturer);
+		final EditText txtMaterial = (EditText) findViewById(R.id.txtMaterial);
+		final EditText txtName = (EditText) findViewById(R.id.txtName);
+		final EditText txtNote = (EditText) findViewById(R.id.txtNote);
+		final EditText txtShape = (EditText) findViewById(R.id.txtShape);
+		final EditText txtShell = (EditText) findViewById(R.id.txtShell);
 		imgBottleImage = (ImageView) findViewById(R.id.imgBottleImage);
+
 		btnSelectImage.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -92,8 +94,9 @@ public class AddBottleActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				final Bottle bottle = new Bottle();
-				boolean isNumberFormatError = false;
+				final BottleImage bottleImage = new BottleImage();
 
+				boolean isNumberFormatError = false;
 				try {
 
 					bottle.setAge(Integer.parseInt(txtAge.getText().toString()));
@@ -112,6 +115,16 @@ public class AddBottleActivity extends Activity {
 					bottle.setShape(txtShape.getText().toString());
 					bottle.setShell(txtShell.getText().toString());
 					bottle.setPostUrl(new URI(getString(R.string.url_web_app)));
+
+					if (((BitmapDrawable) imgBottleImage.getDrawable())
+							.getBitmap() != null) {
+						bottleImage.setImage(((BitmapDrawable) imgBottleImage
+								.getDrawable()).getBitmap());
+						bottleImage.setBottleId(bottle.getID());
+						bottleImage.setPostImageUrl(new URI(
+								getString(R.string.url_web_app_image)
+										+ String.valueOf(bottle.getID())));
+					}
 				} catch (NumberFormatException e) {
 					isNumberFormatError = true;
 				} catch (URISyntaxException e) {
@@ -144,6 +157,10 @@ public class AddBottleActivity extends Activity {
 							final CharSequence sendResult = WebAppConnection
 									.send(bottle);
 
+							if (((BitmapDrawable) imgBottleImage.getDrawable())
+									.getBitmap() != null) {
+								WebAppConnection.send(bottleImage);
+							}
 							// Closing the indeterminate dialog.
 							AddBottleActivity.this
 									.runOnUiThread(new Runnable() {
@@ -156,47 +173,52 @@ public class AddBottleActivity extends Activity {
 										}
 									});
 
-							if (sendResult.equals(getString(R.string.one))) {
-								AddBottleActivity.this
-										.runOnUiThread(new Runnable() {
-
-											@Override
-											public void run() {
-												AlertDialog goodDialog = getDialog(
-														AddBottleActivity.this,
-														getString(R.string.add_successful),
-														getString(R.string.bottle_add_succeed));
-												goodDialog.show();
-											}
-										});
-							} else {
-								AddBottleActivity.this
-										.runOnUiThread(new Runnable() {
-
-											@Override
-											public void run() {
-												AlertDialog badDialog = getDialog(
-														AddBottleActivity.this,
-														getString(R.string.server_error),
-														getString(R.string.bottle_add_failed));
-												badDialog.show();
-											}
-										});
-							}
-
+							checkResultAndShowResultMessage(sendResult);
 						}
 					}).start();
 				} else {
-					AlertDialog parseError = getDialog(AddBottleActivity.this,
+					showMessageOnUiThread(AddBottleActivity.this,
 							getString(R.string.error),
 							getString(R.string.parse_error_message));
-					parseError.show();
 				}
 			}
 
 		});
-		// Bitmap bit = ((BitmapDrawable) imgBottleImage.getDrawable())
-		// .getBitmap();
+	}
+
+	private void showMessageOnUiThread(final Context context,
+			final CharSequence title, final CharSequence message) {
+		runOnUiThread(new Runnable() {
+
+			@Override
+			public void run() {
+				AlertDialog dialog = new AlertDialog.Builder(context).create();
+				dialog.setTitle(title);
+				dialog.setMessage(message);
+				dialog.setButton(getString(R.string.ok),
+						new DialogInterface.OnClickListener() {
+
+							@Override
+							public void onClick(DialogInterface dialog,
+									int which) {
+
+							}
+						});
+				dialog.show();
+			}
+		});
+	}
+
+	private void checkResultAndShowResultMessage(CharSequence result) {
+		if (result.equals(getString(R.string.one))) {
+			showMessageOnUiThread(AddBottleActivity.this,
+					getString(R.string.add_successful),
+					getString(R.string.bottle_add_succeed));
+		} else {
+			showMessageOnUiThread(AddBottleActivity.this,
+					getString(R.string.server_error),
+					getString(R.string.bottle_add_failed));
+		}
 	}
 
 	@Override
@@ -212,22 +234,6 @@ public class AddBottleActivity extends Activity {
 			}
 		}
 
-	}
-
-	private static AlertDialog getDialog(Context context, CharSequence title,
-			CharSequence message) {
-		AlertDialog dialog = new AlertDialog.Builder(context).create();
-		dialog.setTitle(title);
-		dialog.setMessage(message);
-		dialog.setButton(context.getResources().getString(R.string.ok),
-				new DialogInterface.OnClickListener() {
-
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-
-					}
-				});
-		return dialog;
 	}
 
 	private String getImageFilePath(Intent imageReturnedIntent) {

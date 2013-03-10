@@ -38,6 +38,7 @@ public final class R {
         public static final int txtShell=0x7f070005;
     }
     public static final class integer {
+        public static final int image_quality=0x7f040003;
         public static final int one=0x7f040001;
         public static final int select_photo=0x7f040000;
         public static final int zero=0x7f040002;
@@ -85,6 +86,7 @@ public final class R {
         public static final int show_all_bottles=0x7f050003;
         public static final int show_bottle=0x7f050002;
         public static final int url_web_app=0x7f05001a;
+        public static final int url_web_app_image=0x7f050025;
         public static final int zero=0x7f050018;
     }
     public static final class style {
