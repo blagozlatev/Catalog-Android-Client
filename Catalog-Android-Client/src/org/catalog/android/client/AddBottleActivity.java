@@ -3,35 +3,29 @@ package org.catalog.android.client;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import org.catalog.constants.ImageConstants;
 import org.catalog.model.Bottle;
 import org.catalog.web.WebAppConnection;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.DialogInterface.OnCancelListener;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Message;
 import android.provider.MediaStore;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class AddBottleActivity extends Activity {
 
 	private ImageView imgBottleImage;
-	private AlertDialog errorDialog;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -63,9 +57,10 @@ public class AddBottleActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
-				photoPickerIntent.setType("image/*");
-				startActivityForResult(photoPickerIntent,
-						ImageConstants.SELECT_PHOTO);
+				photoPickerIntent
+						.setType(getString(R.string.select_image_intent_type));
+				startActivityForResult(photoPickerIntent, getResources()
+						.getInteger(R.integer.select_photo));
 			}
 		});
 
@@ -116,8 +111,7 @@ public class AddBottleActivity extends Activity {
 					bottle.setNote(txtNote.getText().toString());
 					bottle.setShape(txtShape.getText().toString());
 					bottle.setShell(txtShell.getText().toString());
-					bottle.setPostUrl(new URI(
-							"http://bottlewebapp.apphb.com/Serialized/Post"));
+					bottle.setPostUrl(new URI(getString(R.string.url_web_app)));
 				} catch (NumberFormatException e) {
 					isNumberFormatError = true;
 				} catch (URISyntaxException e) {
@@ -140,14 +134,15 @@ public class AddBottleActivity extends Activity {
 										public void run() {
 											dialog.setCancelable(false);
 											dialog.setIndeterminate(true);
-											dialog.setTitle("Sending!");
-											dialog.setMessage("Sending to server!");
+											dialog.setTitle(getString(R.string.sending));
+											dialog.setMessage(getString(R.string.sending_message));
 											dialog.show();
 										}
 									});
 
 							// Sending the bottle to the bottlewebapp.apphb.com.
-							WebAppConnection.send(bottle);
+							final CharSequence sendResult = WebAppConnection
+									.send(bottle);
 
 							// Closing the indeterminate dialog.
 							AddBottleActivity.this
@@ -160,23 +155,42 @@ public class AddBottleActivity extends Activity {
 											}
 										}
 									});
+
+							if (sendResult.equals(getString(R.string.one))) {
+								AddBottleActivity.this
+										.runOnUiThread(new Runnable() {
+
+											@Override
+											public void run() {
+												AlertDialog goodDialog = getDialog(
+														AddBottleActivity.this,
+														getString(R.string.add_successful),
+														getString(R.string.bottle_add_succeed));
+												goodDialog.show();
+											}
+										});
+							} else {
+								AddBottleActivity.this
+										.runOnUiThread(new Runnable() {
+
+											@Override
+											public void run() {
+												AlertDialog badDialog = getDialog(
+														AddBottleActivity.this,
+														getString(R.string.server_error),
+														getString(R.string.bottle_add_failed));
+												badDialog.show();
+											}
+										});
+							}
+
 						}
 					}).start();
 				} else {
-					errorDialog = new AlertDialog.Builder(
-							AddBottleActivity.this).create();
-					errorDialog.setTitle("Error!");
-					errorDialog.setMessage("Age or ID is not a number!");
-					errorDialog.setButton("OK",
-							new DialogInterface.OnClickListener() {
-
-								@Override
-								public void onClick(DialogInterface dialog,
-										int which) {
-									
-								}
-							});
-					errorDialog.show();
+					AlertDialog parseError = getDialog(AddBottleActivity.this,
+							getString(R.string.error),
+							getString(R.string.parse_error_message));
+					parseError.show();
 				}
 			}
 
@@ -189,9 +203,8 @@ public class AddBottleActivity extends Activity {
 	protected void onActivityResult(int requestCode, int resultCode,
 			Intent imageReturnedIntent) {
 		super.onActivityResult(requestCode, resultCode, imageReturnedIntent);
-
-		switch (requestCode) {
-		case ImageConstants.SELECT_PHOTO:
+		int code = getResources().getInteger(R.integer.select_photo);
+		if (requestCode == code) {
 			if (resultCode == RESULT_OK) {
 				String filePath = getImageFilePath(imageReturnedIntent);
 				imgBottleImage.setImageBitmap(BitmapFactory
@@ -199,6 +212,22 @@ public class AddBottleActivity extends Activity {
 			}
 		}
 
+	}
+
+	private static AlertDialog getDialog(Context context, CharSequence title,
+			CharSequence message) {
+		AlertDialog dialog = new AlertDialog.Builder(context).create();
+		dialog.setTitle(title);
+		dialog.setMessage(message);
+		dialog.setButton(context.getResources().getString(R.string.ok),
+				new DialogInterface.OnClickListener() {
+
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+
+					}
+				});
+		return dialog;
 	}
 
 	private String getImageFilePath(Intent imageReturnedIntent) {

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="integer" name="select_photo" format="integer">100</item>
+    <item type="integer" name="one" format="integer">1</item>
+    <item type="integer" name="zero" format="integer">0</item>
+    
+</resources>

@@ -45,5 +45,19 @@
     <string name="send_bottle">Send Bottle</string>
 
     <string name="clear_fields">Clear Fields</string>
+    <string name="denied">d</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="url_web_app">http://bottlewebapp.apphb.com/Serialized/Post</string>
+    <string name="error">Error!</string>
+    <string name="parse_error_message">Age or ID is not a number!</string>
+    <string name="ok">OK</string>
+    <string name="server_error">Server Error!</string>
+    <string name="bottle_add_failed">Bottle was NOT added successfully!</string>
+    <string name="add_successful">Successful!</string>
+    <string name="bottle_add_succeed">Bottle was added successfully!</string>
+    <string name="sending">Sending!</string>
+    <string name="sending_message">Sending to server!</string>
+    <string name="select_image_intent_type">image/*</string>
 
 </resources>
