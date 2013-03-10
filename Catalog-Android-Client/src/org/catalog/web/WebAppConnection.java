@@ -3,7 +3,6 @@ package org.catalog.web;
 import java.io.IOException;
 
 import org.apache.http.HttpEntity;
-//import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
@@ -24,5 +23,6 @@ public class WebAppConnection {
 		} catch (ClientProtocolException e) {
 		} catch (IOException e) {
 		}
+
 	}
 }

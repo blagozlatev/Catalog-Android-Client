@@ -20,6 +20,24 @@ public class Bottle {
 	private String Note;
 	private URI PostUrl;
 
+	public Bottle(){
+		this.ID = 0;
+		this.AlcoholType = "";
+		this.Alcohol = "";
+		this.Content = "";
+		this.Age = 0;
+		this.Shell = "";
+		this.Name = "";
+		this.Shape = "";
+		this.Color = "";
+		this.Material = "";
+		this.Manufacturer = "";
+		this.City = "";
+		this.Country = "";
+		this.Continent = "";
+		this.Note = "";
+	}
+	
 	public String ToString() {
 		return "ID: " + this.ID + "\n" + "Alcohol Type: " + this.AlcoholType
 				+ "\n" + "Alcohol" + this.Alcohol + "\n" + "Content"
@@ -32,7 +50,7 @@ public class Bottle {
 				+ this.Note + "\n";
 	}
 
-	public static String Serialize(Bottle b) {
+	public static String Serialize(Bottle b) {		
 		return Integer.toString(b.ID).replace('#', ' ') + "#"
 				+ b.AlcoholType.replace('#', ' ') + "#"
 				+ b.Alcohol.replace('#', ' ') + "#"
@@ -79,7 +97,7 @@ public class Bottle {
 		}
 		return b;
 	}
-
+	
 	public int getID() {
 		return ID;
 	}
