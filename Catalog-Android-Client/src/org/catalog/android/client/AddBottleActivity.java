@@ -147,7 +147,7 @@ public class AddBottleActivity extends Activity {
 										public void run() {
 											dialog.setCancelable(false);
 											dialog.setIndeterminate(true);
-											dialog.setTitle(getString(R.string.sending));
+											dialog.setTitle(getString(R.string.please_wait));
 											dialog.setMessage(getString(R.string.sending_message));
 											dialog.show();
 										}
@@ -186,6 +186,18 @@ public class AddBottleActivity extends Activity {
 		});
 	}
 
+	private void checkResultAndShowResultMessage(CharSequence result) {
+		if (result.equals(getString(R.string.one))) {
+			showMessageOnUiThread(AddBottleActivity.this,
+					getString(R.string.add_successful),
+					getString(R.string.bottle_add_succeed));
+		} else {
+			showMessageOnUiThread(AddBottleActivity.this,
+					getString(R.string.server_error),
+					getString(R.string.bottle_add_failed));
+		}
+	}
+
 	private void showMessageOnUiThread(final Context context,
 			final CharSequence title, final CharSequence message) {
 		runOnUiThread(new Runnable() {
@@ -207,18 +219,6 @@ public class AddBottleActivity extends Activity {
 				dialog.show();
 			}
 		});
-	}
-
-	private void checkResultAndShowResultMessage(CharSequence result) {
-		if (result.equals(getString(R.string.one))) {
-			showMessageOnUiThread(AddBottleActivity.this,
-					getString(R.string.add_successful),
-					getString(R.string.bottle_add_succeed));
-		} else {
-			showMessageOnUiThread(AddBottleActivity.this,
-					getString(R.string.server_error),
-					getString(R.string.bottle_add_failed));
-		}
 	}
 
 	@Override

@@ -18,34 +18,53 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 
-import org.catalog.android.client.R;
-import android.content.res.Resources;
+import org.catalog.java.constants.StringConstants;
 import org.catalog.model.Bottle;
 import org.catalog.model.BottleImage;
 
 public class WebAppConnection {
 	public static String send(Bottle b) {
-		return setUrlAndEntityAndSend(b.getPostUrl(), Bottle.Serialize(b));
+		return postSetUrlAndEntityAndSend(b.getPostUrl(), Bottle.Serialize(b));
 	}
 
 	public static String send(BottleImage bi) {
-		return setUrlAndEntityAndSend(bi.getPostImageUrl(),
+		return postSetUrlAndEntityAndSend(bi.getPostImageUrl(),
 				bi.getBitmapBase64Encode());
 	}
 
-	public static Bottle recieveBottle(int id, URI url) {
-		HttpClient httpclient = new DefaultHttpClient();
-		HttpGet httpget = new HttpGet(url);
-		HttpResponse responseEntity;
+	public static Bottle recieveBottle(URI url) {
+		String responseString = getSetUrlAndSend(url);
+		if (!responseString.equals(StringConstants.DENIED)) {
+			return Bottle.Deserialize(responseString);
+		}
+		return null;
+	}
+
+	public static BottleImage recieveBottleImage(int id, URI url) {
 		try {
+			String responseString = getSetUrlAndSend(url);
+			BottleImage bi = new BottleImage();
+			bi.setBitmapBase64Decode(responseString);
+			bi.setBottleId(id);
+			bi.setPostImageUrl(url);
+			return bi;
+		} catch (IllegalArgumentException ex) {
+			return null;
+		}
+	}
+
+	private static String getSetUrlAndSend(URI url) {
+		try {
+			HttpClient httpclient = new DefaultHttpClient();
+			HttpGet httpget = new HttpGet(url);
+			HttpResponse responseEntity;
 			responseEntity = httpclient.execute(httpget);
 			StatusLine statusLine = responseEntity.getStatusLine();
 			if (statusLine.getStatusCode() == HttpStatus.SC_OK) {
 				ByteArrayOutputStream out = new ByteArrayOutputStream();
 				responseEntity.getEntity().writeTo(out);
 				out.close();
-				String responseString = out.toString();
-				return Bottle.Deserialize(responseString);
+				return out.toString();
 			}
 		} catch (ClientProtocolException e1) {
 			e1.printStackTrace();
@@ -53,47 +72,14 @@ public class WebAppConnection {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return null;
+		return StringConstants.DENIED;
 	}
 
-	public static BottleImage recieveBottleImage(int id, URI url) {
-		HttpClient httpclient = new DefaultHttpClient();
-		HttpGet httpget = new HttpGet(url);
-		HttpResponse response;
-		BottleImage bi = new BottleImage();
+	private static String postSetUrlAndEntityAndSend(URI url, String entity) {
 		try {
-			response = httpclient.execute(httpget);
-			StatusLine statusLine = response.getStatusLine();
-			if (statusLine.getStatusCode() == HttpStatus.SC_OK) {
-				HttpEntity responseEntity = response.getEntity();
-				InputStream is = responseEntity.getContent();
-				BufferedReader reader = new BufferedReader(
-						new InputStreamReader(is));
-				StringBuilder out = new StringBuilder();
-				String line;
-				while ((line = reader.readLine()) != null) {
-					out.append(line);
-				}
-				String responseString = out.toString();
-				bi.setBitmapBase64Decode(responseString);
-				bi.setBottleId(id);
-				bi.setPostImageUrl(url);
-				return bi;
-			}
-		} catch (ClientProtocolException e1) {
-			e1.printStackTrace();
+			HttpClient httpclient = new DefaultHttpClient();
+			HttpPost httppost = new HttpPost(url);
 
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return null;
-	}
-
-	private static String setUrlAndEntityAndSend(URI url, String entity) {
-		HttpClient httpclient = new DefaultHttpClient();
-		HttpPost httppost = new HttpPost(url);
-
-		try {
 			HttpEntity httpEntity = new StringEntity(entity);
 			httppost.setEntity(httpEntity);
 			HttpResponse response = httpclient.execute(httppost);
@@ -114,6 +100,6 @@ public class WebAppConnection {
 		} catch (IOException e) {
 
 		}
-		return Resources.getSystem().getString(R.string.denied);
+		return StringConstants.DENIED;
 	}
 }

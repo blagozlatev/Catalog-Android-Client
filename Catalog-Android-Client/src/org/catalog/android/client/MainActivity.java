@@ -50,8 +50,9 @@ public class MainActivity extends Activity {
 									Intent intent = new Intent(
 											MainActivity.this,
 											ShowBottleActivity.class);
-									intent.putExtra("BottleID", Integer
-											.parseInt(input.getText()
+									intent.putExtra(
+											getString(R.string.bottleid),
+											Integer.parseInt(input.getText()
 													.toString()));
 									startActivity(intent);
 								} catch (NumberFormatException ex) {

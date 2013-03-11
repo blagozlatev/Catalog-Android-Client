@@ -23,7 +23,6 @@
     <string name="bottle_image">Bottle Image</string>
     <string name="send_bottle">Send Bottle</string>
     <string name="clear_fields">Clear Fields</string>
-    <string name="denied">0</string>
     <string name="zero">0</string>
     <string name="one">1</string>
     <string name="url_web_app">http://bottlewebapp.apphb.com/Serialized/Post</string>
@@ -40,5 +39,11 @@
     <string name="cancel">Cancel</string>
     <string name="enter_bottle_id">Enter bottle ID!</string>
     <string name="please_enter_bottle_id">Please enter bottle ID.</string>
+    <string name="please_wait">Please wait!</string>
+    <string name="getting_bottle_info">Getting bottle info!</string>
+    <string name="url_get_bottle">http://bottlewebapp.apphb.com/Serialized/GetBottle/</string>
+    <string name="url_get_bottle_image">http://bottlewebapp.apphb.com/Serialized/GetImageBase/</string>
+    <string name="bottleid">BottleID</string>
+    <string name="no_bottle">No bottle was get.</string>
 
 </resources>

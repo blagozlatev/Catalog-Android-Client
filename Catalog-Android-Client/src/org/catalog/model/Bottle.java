@@ -51,52 +51,51 @@ public class Bottle {
 	}
 
 	public static String Serialize(Bottle b) {
-		return Integer.toString(b.ID).replace('#', ' ') + "#"
-				+ b.AlcoholType.replace('#', ' ') + "#"
-				+ b.Alcohol.replace('#', ' ') + "#"
-				+ b.Content.replace('#', ' ') + "#"
-				+ Integer.toString(b.Age).replace('#', ' ') + "#"
-				+ b.Shell.replace('#', ' ') + "#" + b.Name.replace('#', ' ')
-				+ "#" + b.Shape.replace('#', ' ') + "#"
-				+ b.Color.replace('#', ' ') + "#"
-				+ b.Material.replace('#', ' ') + "#"
-				+ b.Manufacturer.replace('#', ' ') + "#"
-				+ b.City.replace('#', ' ') + "#" + b.Country.replace('#', ' ')
-				+ "#" + b.Continent.replace('#', ' ') + "#"
-				+ b.Note.replace('#', ' ') + "#";
+		// Delimiter
+		char dm = '#';
+		// To Be Replaced
+		char tbr = '#';
+		// Replacing Symbol - Space
+		char spc = ' ';
+		return Integer.toString(b.ID).replace(tbr, spc) + dm
+				+ b.AlcoholType.replace(tbr, spc) + dm
+				+ b.Alcohol.replace(tbr, spc) + dm
+				+ b.Content.replace(tbr, spc) + dm
+				+ Integer.toString(b.Age).replace(tbr, spc) + dm
+				+ b.Shell.replace(tbr, spc) + dm + b.Name.replace(tbr, spc)
+				+ dm + b.Shape.replace(tbr, spc) + dm
+				+ b.Color.replace(tbr, spc) + dm + b.Material.replace(tbr, spc)
+				+ dm + b.Manufacturer.replace(tbr, spc) + dm
+				+ b.City.replace(tbr, spc) + dm + b.Country.replace(tbr, spc)
+				+ dm + b.Continent.replace(tbr, spc) + dm
+				+ b.Note.replace(tbr, spc) + dm;
 	}
 
-	public static Bottle Deserialize(String serialized) {
+	public static Bottle Deserialize(String serialized)
+			throws NumberFormatException, IndexOutOfBoundsException {
 		String[] split = serialized.split("#");
 		for (int i = 0; i < split.length; i++) {
 			if (split[i] == null) {
 				split[i] = "";
 			}
 		}
-		try {
-			Bottle b = new Bottle();
-			b.ID = Integer.parseInt(split[0]);
-			b.AlcoholType = split[1];
-			b.Alcohol = split[2];
-			b.Content = split[3];
-			b.Age = Integer.parseInt(split[4]);
-			b.Shell = split[5];
-			b.Name = split[6];
-			b.Shape = split[7];
-			b.Color = split[8];
-			b.Material = split[9];
-			b.Manufacturer = split[10];
-			b.City = split[11];
-			b.Country = split[12];
-			b.Continent = split[13];
-			b.Note = split[14];
-			return b;
-		} catch (NumberFormatException e) {
-			System.out.println("CAN'T PARSE INT!!!");
-		} catch (IndexOutOfBoundsException ex) {
-
-		}
-		return null;
+		Bottle b = new Bottle();
+		b.ID = Integer.parseInt(split[0]);
+		b.AlcoholType = split[1];
+		b.Alcohol = split[2];
+		b.Content = split[3];
+		b.Age = Integer.parseInt(split[4]);
+		b.Shell = split[5];
+		b.Name = split[6];
+		b.Shape = split[7];
+		b.Color = split[8];
+		b.Material = split[9];
+		b.Manufacturer = split[10];
+		b.City = split[11];
+		b.Country = split[12];
+		b.Continent = split[13];
+		b.Note = split[14];
+		return b;
 	}
 
 	public int getID() {

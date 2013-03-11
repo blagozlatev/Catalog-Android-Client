@@ -8,8 +8,9 @@ import org.catalog.model.BottleImage;
 import org.catalog.web.WebAppConnection;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
-import android.graphics.drawable.BitmapDrawable;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -42,7 +43,7 @@ public class ShowBottleActivity extends Activity {
 		final TextView txtViewShell = (TextView) findViewById(R.id.txtViewShell);
 		final ImageView imgShowBottleImage = (ImageView) findViewById(R.id.imgShowBottleImage);
 		Bundle extras = getIntent().getExtras();
-		final int bottleId = extras.getInt("BottleID");
+		final int bottleId = extras.getInt(getString(R.string.bottleid));
 
 		new Thread(new Runnable() {
 			ProgressDialog dialog = new ProgressDialog(ShowBottleActivity.this);
@@ -56,21 +57,18 @@ public class ShowBottleActivity extends Activity {
 					public void run() {
 						dialog.setCancelable(false);
 						dialog.setIndeterminate(true);
-						dialog.setTitle(getString(R.string.sending));
-						dialog.setMessage(getString(R.string.sending_message));
+						dialog.setTitle(getString(R.string.please_wait));
+						dialog.setMessage(getString(R.string.getting_bottle_info));
 						dialog.show();
 					}
 				});
 
 				// Sending the bottle to the bottlewebapp.apphb.com.
 				try {
-					bottle = WebAppConnection.recieveBottle(bottleId, new URI(
-							"http://bottlewebapp.apphb.com/Serialized/GetBottle/"
-									+ bottleId));
-					bottleImage = WebAppConnection.recieveBottleImage(bottleId,
-							new URI(
-									"http://bottlewebapp.apphb.com/Serialized/GetImageBase/"
-											+ bottleId));
+					bottle = WebAppConnection.recieveBottle(new URI(
+							getString(R.string.url_get_bottle) + bottleId));
+					bottleImage = WebAppConnection.recieveBottleImage(bottleId, new URI(
+							getString(R.string.url_get_bottle_image) + bottleId));
 				} catch (URISyntaxException e) {
 					e.printStackTrace();
 				}
@@ -93,24 +91,39 @@ public class ShowBottleActivity extends Activity {
 							txtViewContinent.setText(bottle.getContinent());
 							txtViewCountry.setText(bottle.getCountry());
 							txtViewId.setText(String.valueOf(bottle.getID()));
-							txtViewManufacturer.setText(bottle
-									.getManufacturer());
+							txtViewManufacturer.setText(bottle.getManufacturer());
 							txtViewMaterial.setText(bottle.getMaterial());
 							txtViewName.setText(bottle.getName());
 							txtViewNote.setText(bottle.getNote());
 							txtViewShape.setText(bottle.getShape());
 							txtViewShell.setText(bottle.getShell());
+						} else {
+							ShowBottleActivity.this.runOnUiThread(new Runnable() {
+
+								@Override
+								public void run() {
+									AlertDialog errorDialog = new AlertDialog.Builder(
+											ShowBottleActivity.this).create();
+									errorDialog.setTitle(getString(R.string.error));
+									errorDialog.setMessage(getString(R.string.no_bottle));
+									errorDialog.setButton(getString(R.string.ok),
+											new DialogInterface.OnClickListener() {
+
+												@Override
+												public void onClick(DialogInterface dialog, int which) {
+
+												}
+											});
+									errorDialog.show();
+								}
+							});
 						}
 						if (bottleImage != null) {
-							imgShowBottleImage.setImageBitmap(bottleImage
-									.getImage());
+							imgShowBottleImage.setImageBitmap(bottleImage.getImage());
 						}
 					}
 				});
 			}
 		}).start();
-		if (bottle != null) {
-
-		}
 	}
 }
