@@ -74,6 +74,7 @@ public class ShowBottleActivity extends Activity {
 				}
 
 				// Closing the indeterminate dialog.
+				// Setting the UI.
 				ShowBottleActivity.this.runOnUiThread(new Runnable() {
 
 					@Override

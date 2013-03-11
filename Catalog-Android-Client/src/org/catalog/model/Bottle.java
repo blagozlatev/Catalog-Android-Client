@@ -39,14 +39,13 @@ public class Bottle {
 	}
 
 	public String ToString() {
-		return "ID: " + this.ID + "\n" + "Alcohol Type: " + this.AlcoholType
-				+ "\n" + "Alcohol" + this.Alcohol + "\n" + "Content"
-				+ this.Content + "\n" + "Age" + this.Age + "\n" + "Shell"
-				+ this.Shell + "\n" + "Name" + this.Name + "\n" + "Shape"
-				+ this.Shape + "\n" + "Color" + this.Color + "\n" + "Material"
-				+ this.Material + "\n" + "Manufacturer" + this.Manufacturer
-				+ "\n" + "City" + this.City + "\n" + "Country" + this.Country
-				+ "\n" + "Continent" + this.Continent + "\n" + "Note"
+		return "ID: " + this.ID + "\n" + "Alcohol Type: " + this.AlcoholType + "\n"
+				+ "Alcohol" + this.Alcohol + "\n" + "Content" + this.Content + "\n"
+				+ "Age" + this.Age + "\n" + "Shell" + this.Shell + "\n" + "Name"
+				+ this.Name + "\n" + "Shape" + this.Shape + "\n" + "Color" + this.Color
+				+ "\n" + "Material" + this.Material + "\n" + "Manufacturer"
+				+ this.Manufacturer + "\n" + "City" + this.City + "\n" + "Country"
+				+ this.Country + "\n" + "Continent" + this.Continent + "\n" + "Note"
 				+ this.Note + "\n";
 	}
 
@@ -58,17 +57,14 @@ public class Bottle {
 		// Replacing Symbol - Space
 		char spc = ' ';
 		return Integer.toString(b.ID).replace(tbr, spc) + dm
-				+ b.AlcoholType.replace(tbr, spc) + dm
-				+ b.Alcohol.replace(tbr, spc) + dm
-				+ b.Content.replace(tbr, spc) + dm
+				+ b.AlcoholType.replace(tbr, spc) + dm + b.Alcohol.replace(tbr, spc)
+				+ dm + b.Content.replace(tbr, spc) + dm
 				+ Integer.toString(b.Age).replace(tbr, spc) + dm
-				+ b.Shell.replace(tbr, spc) + dm + b.Name.replace(tbr, spc)
-				+ dm + b.Shape.replace(tbr, spc) + dm
-				+ b.Color.replace(tbr, spc) + dm + b.Material.replace(tbr, spc)
-				+ dm + b.Manufacturer.replace(tbr, spc) + dm
-				+ b.City.replace(tbr, spc) + dm + b.Country.replace(tbr, spc)
-				+ dm + b.Continent.replace(tbr, spc) + dm
-				+ b.Note.replace(tbr, spc) + dm;
+				+ b.Shell.replace(tbr, spc) + dm + b.Name.replace(tbr, spc) + dm
+				+ b.Shape.replace(tbr, spc) + dm + b.Color.replace(tbr, spc) + dm
+				+ b.Material.replace(tbr, spc) + dm + b.Manufacturer.replace(tbr, spc)
+				+ dm + b.City.replace(tbr, spc) + dm + b.Country.replace(tbr, spc) + dm
+				+ b.Continent.replace(tbr, spc) + dm + b.Note.replace(tbr, spc) + dm;
 	}
 
 	public static Bottle Deserialize(String serialized)

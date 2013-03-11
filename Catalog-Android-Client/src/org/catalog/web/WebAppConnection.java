@@ -85,8 +85,7 @@ public class WebAppConnection {
 			HttpResponse response = httpclient.execute(httppost);
 			HttpEntity responseEntity = response.getEntity();
 			InputStream is = responseEntity.getContent();
-			BufferedReader reader = new BufferedReader(
-					new InputStreamReader(is));
+			BufferedReader reader = new BufferedReader(new InputStreamReader(is));
 			StringBuilder out = new StringBuilder();
 			String line;
 			while ((line = reader.readLine()) != null) {

@@ -68,7 +68,8 @@ public class BottleImage {
 		return Base64.encodeToString(this.getBytesFromBitmap(), Base64.DEFAULT);
 	}
 
-	public void setBitmapBase64Decode(String base64) throws IllegalArgumentException {
+	public void setBitmapBase64Decode(String base64)
+			throws IllegalArgumentException {
 		setBitmapFromBytes(Base64.decode(base64, Base64.DEFAULT));
 	}
 }

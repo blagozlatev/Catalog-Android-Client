@@ -59,10 +59,9 @@ public class AddBottleActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
-				photoPickerIntent
-						.setType(getString(R.string.select_image_intent_type));
-				startActivityForResult(photoPickerIntent, getResources()
-						.getInteger(R.integer.select_photo));
+				photoPickerIntent.setType(getString(R.string.select_image_intent_type));
+				startActivityForResult(photoPickerIntent,
+						getResources().getInteger(R.integer.select_photo));
 			}
 		});
 
@@ -116,10 +115,9 @@ public class AddBottleActivity extends Activity {
 					bottle.setShell(txtShell.getText().toString());
 					bottle.setPostUrl(new URI(getString(R.string.url_web_app)));
 
-					if (((BitmapDrawable) imgBottleImage.getDrawable())
-							.getBitmap() != null) {
-						bottleImage.setImage(((BitmapDrawable) imgBottleImage
-								.getDrawable()).getBitmap());
+					if (((BitmapDrawable) imgBottleImage.getDrawable()).getBitmap() != null) {
+						bottleImage.setImage(((BitmapDrawable) imgBottleImage.getDrawable())
+								.getBitmap());
 						bottleImage.setBottleId(bottle.getID());
 						bottleImage.setPostImageUrl(new URI(
 								getString(R.string.url_web_app_image)
@@ -134,44 +132,39 @@ public class AddBottleActivity extends Activity {
 				if (!isNumberFormatError) {
 					// New thread for the connecting operation.
 					new Thread(new Runnable() {
-						ProgressDialog dialog = new ProgressDialog(
-								AddBottleActivity.this);
+						ProgressDialog dialog = new ProgressDialog(AddBottleActivity.this);
 
 						@Override
 						public void run() {
 							// Start the indeterminate dialog.
-							AddBottleActivity.this
-									.runOnUiThread(new Runnable() {
+							AddBottleActivity.this.runOnUiThread(new Runnable() {
 
-										@Override
-										public void run() {
-											dialog.setCancelable(false);
-											dialog.setIndeterminate(true);
-											dialog.setTitle(getString(R.string.please_wait));
-											dialog.setMessage(getString(R.string.sending_message));
-											dialog.show();
-										}
-									});
+								@Override
+								public void run() {
+									dialog.setCancelable(false);
+									dialog.setIndeterminate(true);
+									dialog.setTitle(getString(R.string.please_wait));
+									dialog.setMessage(getString(R.string.sending_message));
+									dialog.show();
+								}
+							});
 
 							// Sending the bottle to the bottlewebapp.apphb.com.
-							final CharSequence sendResult = WebAppConnection
-									.send(bottle);
+							final CharSequence sendResult = WebAppConnection.send(bottle);
 
-							if (((BitmapDrawable) imgBottleImage.getDrawable())
-									.getBitmap() != null) {
+							if (((BitmapDrawable) imgBottleImage.getDrawable()).getBitmap() != null) {
 								WebAppConnection.send(bottleImage);
 							}
 							// Closing the indeterminate dialog.
-							AddBottleActivity.this
-									.runOnUiThread(new Runnable() {
+							AddBottleActivity.this.runOnUiThread(new Runnable() {
 
-										@Override
-										public void run() {
-											if (dialog.isShowing()) {
-												dialog.cancel();
-											}
-										}
-									});
+								@Override
+								public void run() {
+									if (dialog.isShowing()) {
+										dialog.cancel();
+									}
+								}
+							});
 
 							checkResultAndShowResultMessage(sendResult);
 						}
@@ -211,8 +204,7 @@ public class AddBottleActivity extends Activity {
 						new DialogInterface.OnClickListener() {
 
 							@Override
-							public void onClick(DialogInterface dialog,
-									int which) {
+							public void onClick(DialogInterface dialog, int which) {
 
 							}
 						});
@@ -229,8 +221,7 @@ public class AddBottleActivity extends Activity {
 		if (requestCode == code) {
 			if (resultCode == RESULT_OK) {
 				String filePath = getImageFilePath(imageReturnedIntent);
-				imgBottleImage.setImageBitmap(BitmapFactory
-						.decodeFile(filePath));
+				imgBottleImage.setImageBitmap(BitmapFactory.decodeFile(filePath));
 			}
 		}
 
@@ -240,8 +231,8 @@ public class AddBottleActivity extends Activity {
 		Uri selectedImage = imageReturnedIntent.getData();
 		String[] filePathColumn = { MediaStore.Images.Media.DATA };
 
-		Cursor cursor = getContentResolver().query(selectedImage,
-				filePathColumn, null, null, null);
+		Cursor cursor = getContentResolver().query(selectedImage, filePathColumn,
+				null, null, null);
 		cursor.moveToFirst();
 
 		int columnIndex = cursor.getColumnIndex(filePathColumn[0]);

@@ -22,8 +22,7 @@ public class MainActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(MainActivity.this,
-						AddBottleActivity.class);
+				Intent intent = new Intent(MainActivity.this, AddBottleActivity.class);
 				startActivity(intent);
 			}
 		});
@@ -37,23 +36,18 @@ public class MainActivity extends Activity {
 						MainActivity.this);
 				final EditText input = new EditText(MainActivity.this);
 
-				bottleIdDialogBuilder
-						.setTitle(getString(R.string.enter_bottle_id));
+				bottleIdDialogBuilder.setTitle(getString(R.string.enter_bottle_id));
 				bottleIdDialogBuilder
 						.setMessage(getString(R.string.please_enter_bottle_id));
 				bottleIdDialogBuilder.setView(input);
 				bottleIdDialogBuilder.setPositiveButton(getString(R.string.ok),
 						new DialogInterface.OnClickListener() {
-							public void onClick(DialogInterface dialog,
-									int whichButton) {
+							public void onClick(DialogInterface dialog, int whichButton) {
 								try {
-									Intent intent = new Intent(
-											MainActivity.this,
+									Intent intent = new Intent(MainActivity.this,
 											ShowBottleActivity.class);
-									intent.putExtra(
-											getString(R.string.bottleid),
-											Integer.parseInt(input.getText()
-													.toString()));
+									intent.putExtra(getString(R.string.bottleid),
+											Integer.parseInt(input.getText().toString()));
 									startActivity(intent);
 								} catch (NumberFormatException ex) {
 
@@ -61,11 +55,9 @@ public class MainActivity extends Activity {
 							}
 						});
 
-				bottleIdDialogBuilder.setNegativeButton(
-						getString(R.string.cancel),
+				bottleIdDialogBuilder.setNegativeButton(getString(R.string.cancel),
 						new DialogInterface.OnClickListener() {
-							public void onClick(DialogInterface dialog,
-									int whichButton) {
+							public void onClick(DialogInterface dialog, int whichButton) {
 								dialog.cancel();
 							}
 						});
