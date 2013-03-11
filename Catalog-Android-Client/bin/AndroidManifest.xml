@@ -35,11 +35,11 @@
             android:label="@string/add_bottle"
             android:screenOrientation="portrait" >
         </activity>
-		<activity
+        <activity
             android:name=".ShowAllBottlesActivity"
             android:label="@string/add_bottle"
             android:screenOrientation="portrait" >
-        </activity>                
+        </activity>
     </application>
 
 </manifest>

@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URI;
+import java.util.ArrayList;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -51,6 +52,33 @@ public class WebAppConnection {
 		} catch (IllegalArgumentException ex) {
 			return null;
 		}
+	}
+
+	public static ArrayList<Bottle> getAllBottles(URI url) {
+		ArrayList<Bottle> bottles = new ArrayList<Bottle>();
+		try {
+			HttpClient httpclient = new DefaultHttpClient();
+			HttpGet httpget = new HttpGet(url);
+			HttpResponse response;
+			response = httpclient.execute(httpget);
+			StatusLine statusLine = response.getStatusLine();
+			if (statusLine.getStatusCode() == HttpStatus.SC_OK) {
+				InputStream is = response.getEntity().getContent();
+				BufferedReader bufferedReader = new BufferedReader(
+						new InputStreamReader(is));
+				String line = null;
+				while ((line = bufferedReader.readLine()) != null) {
+					bottles.add(Bottle.Deserialize(line));
+				}
+				return bottles;
+			}
+		} catch (ClientProtocolException e1) {
+			e1.printStackTrace();
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 	private static String getSetUrlAndSend(URI url) {

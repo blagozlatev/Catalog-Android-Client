@@ -63,7 +63,7 @@ public class ShowBottleActivity extends Activity {
 					}
 				});
 
-				// Sending the bottle to the bottlewebapp.apphb.com.
+				// Getting the bottle to the bottlewebapp.apphb.com.
 				try {
 					bottle = WebAppConnection.recieveBottle(new URI(
 							getString(R.string.url_get_bottle) + bottleId));
