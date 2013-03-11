@@ -23,7 +23,7 @@
     <string name="bottle_image">Bottle Image</string>
     <string name="send_bottle">Send Bottle</string>
     <string name="clear_fields">Clear Fields</string>
-    <string name="denied">d</string>
+    <string name="denied">0</string>
     <string name="zero">0</string>
     <string name="one">1</string>
     <string name="url_web_app">http://bottlewebapp.apphb.com/Serialized/Post</string>

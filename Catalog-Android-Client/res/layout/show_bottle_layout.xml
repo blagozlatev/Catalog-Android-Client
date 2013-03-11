@@ -12,12 +12,14 @@
         <TextView
             android:id="@+id/txtViewId"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="ID: " />
 
         <TextView
             android:id="@+id/txtViewAlcoholType"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="Alcohol Type: " />
 
         <TextView
             android:id="@+id/txtViewAlcohol"
@@ -90,7 +92,7 @@
             android:layout_height="fill_parent"
             android:adjustViewBounds="true"
             android:contentDescription="@string/bottle_image"
-            android:scaleType="centerInside" />
+            android:scaleType="fitCenter" />
     </LinearLayout>
 
 </ScrollView>

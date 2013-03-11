@@ -23,7 +23,7 @@
     <string name="bottle_image">Изображение на бутилката</string>
     <string name="send_bottle">Изпрати бутилка</string>
     <string name="clear_fields">Изчисти полетата</string>
-    <string name="denied">d</string>
+    <string name="denied">0</string>
     <string name="zero">0</string>
     <string name="one">1</string>
     <string name="url_web_app">http://bottlewebapp.apphb.com/Serialized/Post</string>

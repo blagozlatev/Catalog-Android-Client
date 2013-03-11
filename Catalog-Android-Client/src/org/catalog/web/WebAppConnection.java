@@ -48,11 +48,9 @@ public class WebAppConnection {
 				return Bottle.Deserialize(responseString);
 			}
 		} catch (ClientProtocolException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return null;
@@ -83,11 +81,9 @@ public class WebAppConnection {
 				return bi;
 			}
 		} catch (ClientProtocolException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return null;
@@ -110,7 +106,7 @@ public class WebAppConnection {
 			while ((line = reader.readLine()) != null) {
 				out.append(line);
 			}
-			responseEntity.getContent().close();
+			is.close();
 			return out.toString();
 
 		} catch (ClientProtocolException e) {

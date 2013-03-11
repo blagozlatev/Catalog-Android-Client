@@ -20,7 +20,7 @@ public class Bottle {
 	private String Note;
 	private URI PostUrl;
 
-	public Bottle(){
+	public Bottle() {
 		this.ID = 0;
 		this.AlcoholType = "";
 		this.Alcohol = "";
@@ -37,7 +37,7 @@ public class Bottle {
 		this.Continent = "";
 		this.Note = "";
 	}
-	
+
 	public String ToString() {
 		return "ID: " + this.ID + "\n" + "Alcohol Type: " + this.AlcoholType
 				+ "\n" + "Alcohol" + this.Alcohol + "\n" + "Content"
@@ -50,7 +50,7 @@ public class Bottle {
 				+ this.Note + "\n";
 	}
 
-	public static String Serialize(Bottle b) {		
+	public static String Serialize(Bottle b) {
 		return Integer.toString(b.ID).replace('#', ' ') + "#"
 				+ b.AlcoholType.replace('#', ' ') + "#"
 				+ b.Alcohol.replace('#', ' ') + "#"
@@ -69,12 +69,12 @@ public class Bottle {
 	public static Bottle Deserialize(String serialized) {
 		String[] split = serialized.split("#");
 		for (int i = 0; i < split.length; i++) {
-			if (split[i] != null) {
+			if (split[i] == null) {
 				split[i] = "";
 			}
 		}
-		Bottle b = new Bottle();
 		try {
+			Bottle b = new Bottle();
 			b.ID = Integer.parseInt(split[0]);
 			b.AlcoholType = split[1];
 			b.Alcohol = split[2];
@@ -90,14 +90,15 @@ public class Bottle {
 			b.Country = split[12];
 			b.Continent = split[13];
 			b.Note = split[14];
+			return b;
 		} catch (NumberFormatException e) {
 			System.out.println("CAN'T PARSE INT!!!");
 		} catch (IndexOutOfBoundsException ex) {
-			return null;
+
 		}
-		return b;
+		return null;
 	}
-	
+
 	public int getID() {
 		return ID;
 	}

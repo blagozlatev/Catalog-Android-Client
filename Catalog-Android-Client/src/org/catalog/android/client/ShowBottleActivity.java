@@ -25,25 +25,25 @@ public class ShowBottleActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.show_bottle_layout);
 
-		TextView txtViewAge = (TextView) findViewById(R.id.txtViewAge);
-		TextView txtViewAlcohol = (TextView) findViewById(R.id.txtViewAlcohol);
-		TextView txtViewAlcoholType = (TextView) findViewById(R.id.txtViewAlcoholType);
-		TextView txtViewCity = (TextView) findViewById(R.id.txtViewCity);
-		TextView txtViewColour = (TextView) findViewById(R.id.txtViewColour);
-		TextView txtViewContent = (TextView) findViewById(R.id.txtViewContent);
-		TextView txtViewContinent = (TextView) findViewById(R.id.txtViewContinent);
-		TextView txtViewCountry = (TextView) findViewById(R.id.txtViewCountry);
-		TextView txtViewId = (TextView) findViewById(R.id.txtViewId);
-		TextView txtViewManufacturer = (TextView) findViewById(R.id.txtViewManufacturer);
-		TextView txtViewMaterial = (TextView) findViewById(R.id.txtViewMaterial);
-		TextView txtViewName = (TextView) findViewById(R.id.txtViewName);
-		TextView txtViewNote = (TextView) findViewById(R.id.txtViewNote);
-		TextView txtViewShape = (TextView) findViewById(R.id.txtViewShape);
-		TextView txtViewShell = (TextView) findViewById(R.id.txtViewShell);
+		final TextView txtViewAge = (TextView) findViewById(R.id.txtViewAge);
+		final TextView txtViewAlcohol = (TextView) findViewById(R.id.txtViewAlcohol);
+		final TextView txtViewAlcoholType = (TextView) findViewById(R.id.txtViewAlcoholType);
+		final TextView txtViewCity = (TextView) findViewById(R.id.txtViewCity);
+		final TextView txtViewColour = (TextView) findViewById(R.id.txtViewColour);
+		final TextView txtViewContent = (TextView) findViewById(R.id.txtViewContent);
+		final TextView txtViewContinent = (TextView) findViewById(R.id.txtViewContinent);
+		final TextView txtViewCountry = (TextView) findViewById(R.id.txtViewCountry);
+		final TextView txtViewId = (TextView) findViewById(R.id.txtViewId);
+		final TextView txtViewManufacturer = (TextView) findViewById(R.id.txtViewManufacturer);
+		final TextView txtViewMaterial = (TextView) findViewById(R.id.txtViewMaterial);
+		final TextView txtViewName = (TextView) findViewById(R.id.txtViewName);
+		final TextView txtViewNote = (TextView) findViewById(R.id.txtViewNote);
+		final TextView txtViewShape = (TextView) findViewById(R.id.txtViewShape);
+		final TextView txtViewShell = (TextView) findViewById(R.id.txtViewShell);
 		final ImageView imgShowBottleImage = (ImageView) findViewById(R.id.imgShowBottleImage);
-		if (savedInstanceState != null) {
-			bottleId = savedInstanceState.getInt("BottleID");
-		}
+		Bundle extras = getIntent().getExtras();
+		final int bottleId = extras.getInt("BottleID");
+
 		new Thread(new Runnable() {
 			ProgressDialog dialog = new ProgressDialog(ShowBottleActivity.this);
 
@@ -66,26 +66,44 @@ public class ShowBottleActivity extends Activity {
 				try {
 					bottle = WebAppConnection.recieveBottle(bottleId, new URI(
 							"http://bottlewebapp.apphb.com/Serialized/GetBottle/"
-									+ String.valueOf(12)));
+									+ bottleId));
 					bottleImage = WebAppConnection.recieveBottleImage(bottleId,
 							new URI(
 									"http://bottlewebapp.apphb.com/Serialized/GetImageBase/"
-											+ String.valueOf(12)));
+											+ bottleId));
 				} catch (URISyntaxException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 
 				// Closing the indeterminate dialog.
 				ShowBottleActivity.this.runOnUiThread(new Runnable() {
-					
+
 					@Override
 					public void run() {
 						if (dialog.isShowing()) {
 							dialog.cancel();
 						}
+						if (bottle != null) {
+							txtViewAge.setText(String.valueOf(bottle.getAge()));
+							txtViewAlcohol.setText(bottle.getAlcohol());
+							txtViewAlcoholType.setText(bottle.getAlcoholType());
+							txtViewCity.setText(bottle.getCity());
+							txtViewColour.setText(bottle.getColor());
+							txtViewContent.setText(bottle.getContent());
+							txtViewContinent.setText(bottle.getContinent());
+							txtViewCountry.setText(bottle.getCountry());
+							txtViewId.setText(String.valueOf(bottle.getID()));
+							txtViewManufacturer.setText(bottle
+									.getManufacturer());
+							txtViewMaterial.setText(bottle.getMaterial());
+							txtViewName.setText(bottle.getName());
+							txtViewNote.setText(bottle.getNote());
+							txtViewShape.setText(bottle.getShape());
+							txtViewShell.setText(bottle.getShell());
+						}
 						if (bottleImage != null) {
-							imgShowBottleImage.setImageBitmap(bottleImage.getImage());
+							imgShowBottleImage.setImageBitmap(bottleImage
+									.getImage());
 						}
 					}
 				});
