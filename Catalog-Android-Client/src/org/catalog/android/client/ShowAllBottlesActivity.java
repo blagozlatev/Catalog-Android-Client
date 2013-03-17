@@ -8,9 +8,7 @@ import org.catalog.model.Bottle;
 import org.catalog.web.WebAppConnection;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -18,7 +16,6 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class ShowAllBottlesActivity extends Activity {
 	ArrayList<Bottle> bottles;
@@ -51,7 +48,7 @@ public class ShowAllBottlesActivity extends Activity {
 
 				try {
 					bottles = WebAppConnection.getAllBottles(new URI(
-							"http://bottlewebapp.apphb.com/Serialized/"));
+							getString(R.string.all_bottles)));
 				} catch (URISyntaxException ex) {
 					ex.printStackTrace();
 				}

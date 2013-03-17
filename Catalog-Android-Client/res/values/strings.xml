@@ -41,9 +41,25 @@
     <string name="please_enter_bottle_id">Please enter bottle ID.</string>
     <string name="please_wait">Please wait!</string>
     <string name="getting_bottle_info">Getting bottle info!</string>
-    <string name="url_get_bottle">http://bottlewebapp.apphb.com/Serialized/GetBottle/</string>
+    <string name="url_get_bottle">http://bottlewebapp.apphb.com/Serialized/Index/</string>
     <string name="url_get_bottle_image">http://bottlewebapp.apphb.com/Serialized/GetImageBase/</string>
     <string name="bottleid">BottleID</string>
     <string name="no_bottle">No bottle was get.</string>
+    <string name="id_">"ID: "</string>
+    <string name="alcohol_type_">"Alcohol Type: "</string>
+    <string name="alcohol_">"Alcohol: "</string>
+    <string name="content_">"Content: "</string>
+    <string name="age_">"Age: "</string>
+    <string name="shell_">"Shell: "</string>
+    <string name="name_">"Name: "</string>
+    <string name="shape_">"Shape: "</string>
+    <string name="colour_">"Colour: "</string>
+    <string name="material_">"Material: "</string>
+    <string name="manufacturer_">"Manufacturer: "</string>
+    <string name="city_">"City: "</string>
+    <string name="country_">"Country: "</string>
+    <string name="note_">"Note: "</string>
+    <string name="continent_">"Continent: "</string>
+    <string name="all_bottles">http://bottlewebapp.apphb.com/Serialized/</string>
 
 </resources>

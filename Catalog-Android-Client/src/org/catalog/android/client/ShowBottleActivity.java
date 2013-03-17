@@ -11,6 +11,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -99,25 +100,19 @@ public class ShowBottleActivity extends Activity {
 							txtViewShape.setText(bottle.getShape());
 							txtViewShell.setText(bottle.getShell());
 						} else {
-							ShowBottleActivity.this.runOnUiThread(new Runnable() {
+							AlertDialog errorDialog = new AlertDialog.Builder(
+									ShowBottleActivity.this).create();
+							errorDialog.setTitle(getString(R.string.error));
+							errorDialog.setMessage(getString(R.string.no_bottle));
+							errorDialog.setButton(getString(R.string.ok),
+									new DialogInterface.OnClickListener() {
 
-								@Override
-								public void run() {
-									AlertDialog errorDialog = new AlertDialog.Builder(
-											ShowBottleActivity.this).create();
-									errorDialog.setTitle(getString(R.string.error));
-									errorDialog.setMessage(getString(R.string.no_bottle));
-									errorDialog.setButton(getString(R.string.ok),
-											new DialogInterface.OnClickListener() {
-
-												@Override
-												public void onClick(DialogInterface dialog, int which) {
-
-												}
-											});
-									errorDialog.show();
-								}
-							});
+										@Override
+										public void onClick(DialogInterface dialog, int which) {
+											finish();
+										}
+									});
+							errorDialog.show();
 						}
 						if (bottleImage != null) {
 							imgShowBottleImage.setImageBitmap(bottleImage.getImage());
