@@ -61,5 +61,6 @@
     <string name="note_">"Note: "</string>
     <string name="continent_">"Continent: "</string>
     <string name="all_bottles">http://bottlewebapp.apphb.com/Serialized/</string>
+    <string name="url_web_app_image">http://bottlewebapp.apphb.com/Serialized/PostImage/</string>
 
 </resources>

@@ -1,6 +1,6 @@
 
 <resources>
-
+	<string name="all_bottles">http://bottlewebapp.apphb.com/Serialized/</string>
     <string name="app_name">Miniature Bottles</string>
     <string name="add_bottle">Добави бутилка</string>
     <string name="show_bottle">Покажи бутилка</string>
@@ -26,7 +26,7 @@
     <string name="clear_fields">Изчисти полетата</string>
     <string name="zero">0</string>
     <string name="one">1</string>
-    <string name="url_web_app">http://bottlewebapp.apphb.com/Serialized/Post</string>
+    <string name="url_web_app">http://bottlewebapp.apphb.com/Serialized/Post</string><string name="url_get_bottle">http://bottlewebapp.apphb.com/Serialized/Index/</string><string name="url_get_bottle_image">http://bottlewebapp.apphb.com/Serialized/GetImageBase/</string>
     <string name="error">Грешка!</string>
     <string name="parse_error_message">Възрастта или ид. номер не е число!</string>
     <string name="ok">Добре</string>
