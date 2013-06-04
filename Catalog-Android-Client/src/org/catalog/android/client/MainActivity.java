@@ -104,13 +104,13 @@ public class MainActivity extends Activity {
 		linearLayout.setOrientation(1);
 		linearLayout.addView(inputUser);
 		linearLayout.addView(inputPass);
-		final AlertDialog.Builder bottleIdDialogBuilder = new AlertDialog.Builder(
+		final AlertDialog.Builder authDialogBuilder = new AlertDialog.Builder(
 				context);
-		bottleIdDialogBuilder.setTitle(getString(R.string.enter_bottle_id));
-		bottleIdDialogBuilder
+		authDialogBuilder.setTitle(getString(R.string.enter_bottle_id));
+		authDialogBuilder
 				.setMessage(getString(R.string.please_enter_bottle_id));
-		bottleIdDialogBuilder.setView(linearLayout);
-		bottleIdDialogBuilder.setPositiveButton(getString(R.string.ok),
+		authDialogBuilder.setView(linearLayout);
+		authDialogBuilder.setPositiveButton(getString(R.string.ok),
 				new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int whichButton) {
 						if (inputUser.getText().toString().equals("admin")
@@ -125,12 +125,12 @@ public class MainActivity extends Activity {
 					}
 				});
 
-		bottleIdDialogBuilder.setNegativeButton(getString(R.string.cancel),
+		authDialogBuilder.setNegativeButton(getString(R.string.cancel),
 				new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int whichButton) {
 						dialog.cancel();
 					}
 				});
-		bottleIdDialogBuilder.show();
+		authDialogBuilder.show();
 	}
 }
