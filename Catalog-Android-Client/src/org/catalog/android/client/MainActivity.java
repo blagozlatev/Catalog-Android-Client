@@ -1,7 +1,5 @@
 package org.catalog.android.client;
 
-import org.catalog.model.Bottle;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -9,8 +7,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.PasswordTransformationMethod;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnKeyListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -100,6 +100,7 @@ public class MainActivity extends Activity {
 		final EditText inputUser = new EditText(context);
 		final EditText inputPass = new EditText(context);
 		inputPass.setTransformationMethod(new PasswordTransformationMethod());
+
 		LinearLayout linearLayout = new LinearLayout(context);
 		linearLayout.setOrientation(1);
 		linearLayout.addView(inputUser);
@@ -110,13 +111,27 @@ public class MainActivity extends Activity {
 		authDialogBuilder
 				.setMessage(getString(R.string.please_enter_bottle_id));
 		authDialogBuilder.setView(linearLayout);
-		authDialogBuilder.setPositiveButton(getString(R.string.ok),
+		inputPass.setOnKeyListener(new OnKeyListener() {
+
+			@Override
+			public boolean onKey(View v, int keyCode,
+					KeyEvent event) {
+				if ((event.getAction() == KeyEvent.ACTION_DOWN)
+						&& (keyCode == KeyEvent.KEYCODE_ENTER)) {					
+					return true;
+				}
+				return false;
+			}
+		});
+
+		authDialogBuilder.setPositiveButton(getString(R.string.ok),				
 				new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int whichButton) {
 						if (inputUser.getText().toString().equals("admin")
 								&& inputPass.getText().toString()
 										.equals("pass")) {
 							isAuth = true;
+
 						} else {
 							Toast.makeText(context,
 									"Wrong username or password!",
@@ -130,7 +145,7 @@ public class MainActivity extends Activity {
 					public void onClick(DialogInterface dialog, int whichButton) {
 						dialog.cancel();
 					}
-				});
+				});			
 		authDialogBuilder.show();
 	}
 }
