@@ -1,14 +1,6 @@
 [
     {
-        "merged": "C:\\Users\\Blagovest Zlatev\\StudioProjects\\Catalog-Android-Client\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
-        "source": "C:\\Users\\Blagovest Zlatev\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
         "source": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Blagovest Zlatev\\StudioProjects\\Catalog-Android-Client1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
-        "source": "C:\\Users\\Blagovest Zlatev\\StudioProjects\\Catalog-Android-Client1\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
     }
 ]
