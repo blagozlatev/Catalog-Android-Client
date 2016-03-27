@@ -80,6 +80,25 @@ public class WebAppConnection {
         return null;
     }
 
+    public static String deleteBottle(URI url) {
+        try {
+            HttpClient httpclient = new DefaultHttpClient();
+            HttpPost httpPost = new HttpPost(url);
+            HttpResponse httpResponse = httpclient.execute(httpPost);
+            StatusLine statusLine = httpResponse.getStatusLine();
+            if (statusLine.getStatusCode() == HttpStatus.SC_OK) {
+                return StringConstants.DENIED;
+            }
+            return StringConstants.DENIED;
+        } catch (ClientProtocolException e1) {
+            e1.printStackTrace();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return StringConstants.DENIED;
+    }
+
     private static String getSetUrlAndSend(URI url) {
         try {
             HttpClient httpclient = new DefaultHttpClient();

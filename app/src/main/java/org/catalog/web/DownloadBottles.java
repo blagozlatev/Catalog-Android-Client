@@ -25,11 +25,13 @@ public class DownloadBottles extends AsyncTask<URI, Void, ArrayList<Bottle>> {
     private Context context;
     private ProgressDialog mProgressDialog;
     private ListView listView;
+    private boolean isForDelete;
 
-    public DownloadBottles(Context ActivityContext, ListView LV) {
+    public DownloadBottles(Context ActivityContext, ListView LV, boolean isForDelete) {
         bottles = null;
         context = ActivityContext;
         listView = LV;
+        this.isForDelete = isForDelete;
     }
 
     @Override
@@ -81,6 +83,7 @@ public class DownloadBottles extends AsyncTask<URI, Void, ArrayList<Bottle>> {
                 Intent showSingleBottle = new Intent(
                         context, ShowBottleActivity.class);
                 showSingleBottle.putExtra(context.getString(R.string.bottleid), bottles.get(pos).getID());
+                showSingleBottle.putExtra(context.getString(R.string.isBottleDelete), isForDelete);
                 context.startActivity(showSingleBottle);
             }
         });

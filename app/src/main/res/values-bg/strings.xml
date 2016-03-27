@@ -44,5 +44,6 @@
     <string name="please_wait">Моля, изчакайте!</string>
     <string name="getting_bottle_info">Взима се информация за бутилката!</string>
     <string name="no_bottle">Не беше получене бутилка.</string>
+    <string name="delete_bottle">Delete Bottle</string>
 
 </resources>

@@ -14,11 +14,11 @@
         />  
 
     <Button
-        android:id="@+id/btnShowBottle"
+        android:id="@+id/btnDeleteBottle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:onClick="showBottleClicked"
-        android:text="@string/show_bottle"
+        android:text="@string/delete_bottle"
         android:layout_weight="33" />
 
     <Button

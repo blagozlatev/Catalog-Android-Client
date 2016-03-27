@@ -62,5 +62,11 @@
     <string name="continent_">"Continent: "</string>
     <string name="all_bottles">http://bottlewebapp.apphb.com/Serialized/</string>
     <string name="url_web_app_image">http://bottlewebapp.apphb.com/Serialized/PostImage/</string>
+    <string name="title_activity_delete_bottle">DeleteBottleActivity</string>
+    <string name="delete_bottle">Delete Bottle</string>
+    <string name="isBottleDelete">isBottleDelete</string>
+    <string name="url_delete_bottle">http://bottlewebapp.apphb.com/Database/Delete/</string>
+    <string name="delete_successful">Delete Successful</string>
+    <string name="delete_unsuccessful">Delete Unsuccessful</string>
 
 </resources>

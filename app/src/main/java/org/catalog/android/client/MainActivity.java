@@ -39,48 +39,14 @@ public class MainActivity extends Activity {
 			}
 		});
 
-		final Button btnShowBottle = (Button) findViewById(R.id.btnShowBottle);
-		btnShowBottle.setOnClickListener(new OnClickListener() {
+		final Button btnDeleteBottle = (Button) findViewById(R.id.btnDeleteBottle);
+		btnDeleteBottle.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
-				final AlertDialog.Builder bottleIdDialogBuilder = new AlertDialog.Builder(
-						MainActivity.this);
-				final EditText input = new EditText(MainActivity.this);
-
-				bottleIdDialogBuilder
-						.setTitle(getString(R.string.enter_bottle_id));
-				bottleIdDialogBuilder
-						.setMessage(getString(R.string.please_enter_bottle_id));
-				bottleIdDialogBuilder.setView(input);
-				bottleIdDialogBuilder.setPositiveButton(getString(R.string.ok),
-						new DialogInterface.OnClickListener() {
-							public void onClick(DialogInterface dialog,
-									int whichButton) {
-								try {
-									Intent intent = new Intent(
-											MainActivity.this,
-											ShowBottleActivity.class);
-									intent.putExtra(
-											getString(R.string.bottleid),
-											Integer.parseInt(input.getText()
-													.toString()));
-									startActivity(intent);
-								} catch (NumberFormatException ex) {
-
-								}
-							}
-						});
-
-				bottleIdDialogBuilder.setNegativeButton(
-						getString(R.string.cancel),
-						new DialogInterface.OnClickListener() {
-							public void onClick(DialogInterface dialog,
-									int whichButton) {
-								dialog.cancel();
-							}
-						});
-				bottleIdDialogBuilder.show();
+				Intent intent = new Intent(MainActivity.this,
+						DeleteBottleActivity.class);
+				startActivity(intent);
 			}
 		});
 

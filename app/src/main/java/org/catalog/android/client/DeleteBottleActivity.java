@@ -11,16 +11,16 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
 
-public class ShowAllBottlesActivity extends Activity {
-    ArrayList<Bottle> bottles;
+public class DeleteBottleActivity extends Activity {
+    private ArrayList<Bottle> bottles;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.show_all_bottles_layout);
+        setContentView(R.layout.activity_delete_bottle);
 
         final ListView lstAllBottles = (ListView) findViewById(R.id.lstAllBottles);
-        DownloadBottles downloadBottles = new DownloadBottles(ShowAllBottlesActivity.this, lstAllBottles, false);
+        DownloadBottles downloadBottles = new DownloadBottles(DeleteBottleActivity.this, lstAllBottles, true);
         try {
             downloadBottles.execute(new URI(getString(R.string.all_bottles)));
         } catch (URISyntaxException e) {

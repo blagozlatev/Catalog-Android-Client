@@ -8,6 +8,10 @@
         "source": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\layout\\add_bottle_layout.xml"
     },
     {
+        "merged": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_delete_bottle.xml",
+        "source": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\layout\\activity_delete_bottle.xml"
+    },
+    {
         "merged": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\build\\intermediates\\res\\merged\\debug\\layout\\show_bottle_layout.xml",
         "source": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\layout\\show_bottle_layout.xml"
     },

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
     <item format="integer" name="image_quality" type="integer">100</item>
     <item format="integer" name="one" type="integer">1</item>
     <item format="integer" name="select_photo" type="integer">100</item>
@@ -30,11 +32,15 @@
     <string name="continent_">"Continent: "</string>
     <string name="country">Country</string>
     <string name="country_">"Country: "</string>
+    <string name="delete_bottle">Delete Bottle</string>
+    <string name="delete_successful">Delete Successful</string>
+    <string name="delete_unsuccessful">Delete Unsuccessful</string>
     <string name="enter_bottle_id">Enter bottle ID!</string>
     <string name="error">Error!</string>
     <string name="getting_bottle_info">Getting bottle info!</string>
     <string name="id">ID</string>
     <string name="id_">"ID: "</string>
+    <string name="isBottleDelete">isBottleDelete</string>
     <string name="manufacturer">Manufacturer</string>
     <string name="manufacturer_">"Manufacturer: "</string>
     <string name="material">Material</string>
@@ -61,6 +67,8 @@
     <string name="shell_">"Shell: "</string>
     <string name="show_all_bottles">Show All Bottles</string>
     <string name="show_bottle">Show Bottle</string>
+    <string name="title_activity_delete_bottle">DeleteBottleActivity</string>
+    <string name="url_delete_bottle">http://bottlewebapp.apphb.com/Database/Delete/</string>
     <string name="url_get_bottle">http://bottlewebapp.apphb.com/Serialized/Index/</string>
     <string name="url_get_bottle_image">http://bottlewebapp.apphb.com/Serialized/GetImageBase/</string>
     <string name="url_web_app">http://bottlewebapp.apphb.com/Serialized/Post</string>

@@ -17,6 +17,7 @@
     <string name="content">Съдържание</string>
     <string name="continent">Континент</string>
     <string name="country">Държава</string>
+    <string name="delete_bottle">Delete Bottle</string>
     <string name="enter_bottle_id">Въведете ид. номер!</string>
     <string name="error">Грешка!</string>
     <string name="getting_bottle_info">Взима се информация за бутилката!</string>

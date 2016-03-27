@@ -259,6 +259,12 @@
             android:adjustViewBounds="true"
             android:contentDescription="@string/bottle_image"
             android:scaleType="centerInside" />
-    </TableLayout>
 
+        <Button
+            android:id="@+id/btnDeleteBottle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showBottleClicked"
+            android:text="@string/delete_bottle" />
+    </TableLayout>
 </ScrollView>
