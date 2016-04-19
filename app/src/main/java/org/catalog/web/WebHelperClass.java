@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 
 import org.apache.http.HttpEntity;
@@ -19,11 +20,12 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 
-import org.catalog.java.constants.StringConstants;
 import org.catalog.model.Bottle;
 import org.catalog.model.BottleImage;
 
-public class WebAppConnection {
+public class WebHelperClass {
+    public static final String DENIED = "0";
+
     public static String send(Bottle b) {
         return postSetUrlAndEntityAndSend(b.getPostUrl(), Bottle.Serialize(b));
     }
@@ -35,7 +37,7 @@ public class WebAppConnection {
 
     public static Bottle recieveBottle(URI url) {
         String responseString = getSetUrlAndSend(url);
-        if (!responseString.equals(StringConstants.DENIED)) {
+        if (!responseString.equals(DENIED)) {
             return Bottle.Deserialize(responseString);
         }
         return null;
@@ -44,59 +46,53 @@ public class WebAppConnection {
     public static BottleImage recieveBottleImage(int id, URI url) {
         try {
             String responseString = getSetUrlAndSend(url);
-            BottleImage bi = new BottleImage();
-            bi.setBitmapBase64Decode(responseString);
-            bi.setBottleId(id);
-            bi.setPostImageUrl(url);
-            return bi;
+            return new BottleImage(responseString, id, url);
         } catch (IllegalArgumentException ex) {
             return null;
         }
     }
 
-    public static ArrayList<Bottle> getAllBottles(URI url) {
+
+    @SuppressWarnings("SpellCheckingInspection")
+    public static ArrayList<Bottle> getAllBottles() {
         ArrayList<Bottle> bottles = new ArrayList<Bottle>();
         try {
             HttpClient httpclient = new DefaultHttpClient();
-            HttpGet httpget = new HttpGet(url);
+            HttpGet httpget = new HttpGet(new URI("http://bottlewebapp.apphb.com/Serialized/"));
             HttpResponse response = httpclient.execute(httpget);
             StatusLine statusLine = response.getStatusLine();
             if (statusLine.getStatusCode() == HttpStatus.SC_OK) {
                 InputStream is = response.getEntity().getContent();
                 BufferedReader bufferedReader = new BufferedReader(
                         new InputStreamReader(is));
-                String line = null;
+                String line;
                 while ((line = bufferedReader.readLine()) != null) {
                     bottles.add(Bottle.Deserialize(line));
                 }
                 return bottles;
             }
-        } catch (ClientProtocolException e1) {
-            e1.printStackTrace();
-
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        } catch (ClientProtocolException e) {
+            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
         return null;
     }
 
-    public static String deleteBottle(URI url) {
+    public static boolean deleteBottle(URI url) {
         try {
             HttpClient httpclient = new DefaultHttpClient();
             HttpPost httpPost = new HttpPost(url);
-            HttpResponse httpResponse = httpclient.execute(httpPost);
-            StatusLine statusLine = httpResponse.getStatusLine();
-            if (statusLine.getStatusCode() == HttpStatus.SC_OK) {
-                return StringConstants.DENIED;
-            }
-            return StringConstants.DENIED;
+            httpclient.execute(httpPost);
+            return true;
         } catch (ClientProtocolException e1) {
             e1.printStackTrace();
-
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return StringConstants.DENIED;
+        return false;
     }
 
     private static String getSetUrlAndSend(URI url) {
@@ -118,7 +114,7 @@ public class WebAppConnection {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return StringConstants.DENIED;
+        return DENIED;
     }
 
     private static String postSetUrlAndEntityAndSend(URI url, String entity) {
@@ -141,10 +137,10 @@ public class WebAppConnection {
             return out.toString();
 
         } catch (ClientProtocolException e) {
-
+            e.printStackTrace();
         } catch (IOException e) {
-
+            e.printStackTrace();
         }
-        return StringConstants.DENIED;
+        return DENIED;
     }
 }

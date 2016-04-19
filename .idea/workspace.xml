@@ -9,40 +9,37 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03a64f5e-de54-4f03-90a8-f5b8575e66c1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/DeleteBottleActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_delete_bottle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values-w820dp/strings.xml" />
-      <change type="DELETED" beforePath="C:\Users\Blagovest Zlatev\Documents\StudioProjects\Catalog-Android-Client\app\build\intermediates\classes\debug\org\catalog\android\client\MainActivity$2$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Blagovest Zlatev\Documents\StudioProjects\Catalog-Android-Client\app\build\intermediates\classes\debug\org\catalog\android\client\MainActivity$2$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Blagovest Zlatev\Documents\StudioProjects\Catalog-Android-Client\app\build\intermediates\classes\debug\org\catalog\android\client\ShowBottleActivity$1$2$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Blagovest Zlatev\Documents\StudioProjects\Catalog-Android-Client\app\src\main\java\org\catalog\web\UploadBottle.java" afterPath="" />
+    <list default="true" id="03a64f5e-de54-4f03-90a8-f5b8575e66c1" name="Default" comment="Implemented AsyncTask as a singleton class in all activities. Added more robust logic. Refactored a lot of old code.">
+      <change type="DELETED" beforePath="C:\Users\Blagovest Zlatev\Documents\StudioProjects\Catalog-Android-Client\app\build\intermediates\classes\debug\org\catalog\android\client\AddBottleActivity$3$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Blagovest Zlatev\Documents\StudioProjects\Catalog-Android-Client\app\build\intermediates\classes\debug\org\catalog\android\client\AddBottleActivity$3$1$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Blagovest Zlatev\Documents\StudioProjects\Catalog-Android-Client\app\build\intermediates\classes\debug\org\catalog\android\client\AddBottleActivity$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Blagovest Zlatev\Documents\StudioProjects\Catalog-Android-Client\app\build\intermediates\classes\debug\org\catalog\android\client\AddBottleActivity$4$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Blagovest Zlatev\Documents\StudioProjects\Catalog-Android-Client\app\build\intermediates\classes\debug\org\catalog\android\client\ShowBottleActivity$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Blagovest Zlatev\Documents\StudioProjects\Catalog-Android-Client\app\build\intermediates\classes\debug\org\catalog\android\client\ShowBottleActivity$1$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Blagovest Zlatev\Documents\StudioProjects\Catalog-Android-Client\app\build\intermediates\classes\debug\org\catalog\java\constants\StringConstants.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Blagovest Zlatev\Documents\StudioProjects\Catalog-Android-Client\app\build\intermediates\classes\debug\org\catalog\web\WebAppConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Blagovest Zlatev\Documents\StudioProjects\Catalog-Android-Client\app\src\main\java\org\catalog\java\constants\StringConstants.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Blagovest Zlatev\Documents\StudioProjects\Catalog-Android-Client\app\src\main\java\org\catalog\web\DownloadBottles.java" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Blagovest Zlatev\Documents\StudioProjects\Catalog-Android-Client\app\src\main\java\org\catalog\web\WebAppConnection.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/catalog/web/WebHelperClass.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/AddBottleActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/AddBottleActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/AddBottleActivity$3$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/AddBottleActivity$3$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/AddBottleActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/AddBottleActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/AddBottleActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/AddBottleActivity$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/AddBottleActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/AddBottleActivity$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/AddBottleActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/AddBottleActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/model/Bottle.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/model/Bottle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/model/BottleImage.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/model/BottleImage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/MainActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/MainActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/MainActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/MainActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/MainActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/MainActivity$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/MainActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/MainActivity$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/MainActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/MainActivity$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/MainActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/MainActivity$6.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/R.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/R.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/ShowAllBottlesActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/ShowAllBottlesActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/ShowBottleActivity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/ShowBottleActivity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/ShowBottleActivity$1$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/ShowBottleActivity$1$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/ShowBottleActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/ShowBottleActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/ShowBottleActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/android/client/ShowBottleActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/web/WebAppConnection.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/catalog/web/WebAppConnection.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" />
@@ -50,20 +47,24 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0_f0ab625e2aa242d01aa2cd3c4d39a3cf5323d1f8.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0_f0ab625e2aa242d01aa2cd3c4d39a3cf5323d1f8.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/AddBottleActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/AddBottleActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/catalog/web/DownloadBottles.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/catalog/web/DownloadBottles.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/catalog/model/Bottle.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/catalog/model/Bottle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/catalog/model/BottleImage.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/catalog/model/BottleImage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Catalog-Android-Client.iml" afterPath="$PROJECT_DIR$/Catalog-Android-Client.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/DeleteBottleActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/DeleteBottleActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/org/catalog/android/client/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/org/catalog/android/client/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/ShowAllBottlesActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/ShowAllBottlesActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/ShowBottleActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/ShowBottleActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/catalog/web/WebAppConnection.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/catalog/web/WebAppConnection.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/layout.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/main_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/main_layout.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/main_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main_layout.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
@@ -71,9 +72,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/show_bottle_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/show_bottle_layout.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/show_bottle_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/show_bottle_layout.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-bg/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-bg/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-bg.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-bg.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-bg/values-bg.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-bg/values-bg.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -105,30 +104,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ShowBottleActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/ShowBottleActivity.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72407407">
-              <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-              <folding>
-                <element signature="e#2328#2356#0" expanded="true" />
-                <element signature="e#2410#2444#0" expanded="true" />
-                <element signature="e#2826#3258#0" expanded="true" />
-                <element signature="e#3062#3093#0" expanded="true" />
-                <element signature="e#3138#3177#0" expanded="true" />
-                <element signature="e#3257#3258#0" expanded="true" />
-                <element signature="e#3470#3797#0" expanded="true" />
-                <element signature="e#3796#3797#0" expanded="true" />
-                <element signature="e#4007#4041#0" expanded="true" />
-                <element signature="e#4173#4213#0" expanded="true" />
-                <element signature="e#6070#6095#0" expanded="true" />
-                <element signature="e#6149#6178#0" expanded="true" />
-                <element signature="e#6231#6253#0" expanded="true" />
-                <element signature="e#7012#7306#0" expanded="true" />
-                <element signature="e#7163#7200#0" expanded="true" />
-                <element signature="e#7305#7306#0" expanded="true" />
-                <element signature="e#7332#7369#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.66108006">
+              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,6 +125,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Blagovest Zlatev" />
+      </list>
+    </option>
+    <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -1662,20 +1649,25 @@
       <list>
         <option value="$PROJECT_DIR$/Catalog-Android-Client1.iml" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/catalog/model/BottleImage.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/catalog/web/UploadBottles.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_delete_bottle.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/main_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/ShowAllBottlesActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/DeleteBottleActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/catalog/web/DownloadBottles.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/show_bottle_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/catalog/web/WebAppConnection.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/catalog/web/UploadBottle.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/catalog/web/WebAppConnection.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/catalog/java/constants/StringConstants.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/show_bottle_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/main_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/catalog/web/WebHelperClass.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/ShowAllBottlesActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/DeleteBottleActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/catalog/model/BottleImage.java" />
+        <option value="$PROJECT_DIR$/app/build/generated/source/r/debug/org/catalog/android/client/R.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/ShowBottleActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/AddBottleActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/catalog/model/Bottle.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -1690,8 +1682,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
+    <option name="x" value="57" />
+    <option name="y" value="30" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -1737,6 +1729,10 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1757,68 +1753,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Catalog-Android-Client" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="strings.xml" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Catalog-Android-Client" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Catalog-Android-Client" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1882,45 +1816,13 @@
               <option name="myItemId" value="catalog" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Catalog-Android-Client" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="catalog" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Catalog-Android-Client" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1933,6 +1835,8 @@
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="0123456789ABCDEF" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_23_x86" />
   </component>
   <component name="Push.Settings">
     <excluded-roots>
@@ -2097,7 +2001,7 @@
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="Nexus_5_API_23_x86" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
@@ -2157,31 +2061,38 @@
       <option name="project" value="LOCAL" />
       <updated>1457867565013</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Remove Show Bottle Option. added deletebottle">
+      <created>1459071042519</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1459071042519</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="260" y="20" width="1400" height="1000" extended-state="0" />
+    <frame x="57" y="30" width="1400" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.5052239" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977462" sideWeight="0.4902985" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3262159" sideWeight="0.5477612" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977462" sideWeight="0.5097015" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3262159" sideWeight="0.4522388" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32502964" sideWeight="0.43731344" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32910448" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.49701494" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.4791045" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.47014925" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.49701494" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.49402985" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -2193,7 +2104,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.49701494" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2210,35 +2120,52 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="migrated the repo from Eclipse ADT to Gradle and Android Studio&#10;" />
     <MESSAGE value="Started implementing AsyncTask. Better code structure.&#10;Added Download/UploadBottle classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started implementing AsyncTask. Better code structure.&#10;Added Download/UploadBottle classes" />
+    <MESSAGE value="Remove Show Bottle Option. added deletebottle" />
+    <MESSAGE value="Implemented AsyncTask as a singleton class in all activities. Added more robust logic. Refactored a lot of old code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented AsyncTask as a singleton class in all activities. Added more robust logic. Refactored a lot of old code." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/ShowBottleActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2909#2937#0" expanded="true" />
+            <element signature="e#2977#3011#0" expanded="true" />
+            <element signature="e#3911#3942#0" expanded="true" />
+            <element signature="e#3983#4022#0" expanded="true" />
+            <element signature="e#4246#4280#0" expanded="true" />
+            <element signature="e#4402#4442#0" expanded="true" />
+            <element signature="e#5807#5832#0" expanded="true" />
+            <element signature="e#5874#5903#0" expanded="true" />
+            <element signature="e#5944#5966#0" expanded="true" />
+            <element signature="e#5968#6206#0" expanded="true" />
+            <element signature="e#6205#6206#0" expanded="true" />
+            <element signature="e#6879#6910#0" expanded="true" />
+            <element signature="e#6951#6990#0" expanded="true" />
+            <element signature="e#7189#7226#0" expanded="true" />
+            <element signature="e#7630#7667#0" expanded="true" />
+            <element signature="e#7773#7812#0" expanded="true" />
+            <element signature="e#7988#8038#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/ShowAllBottlesActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/web/DownloadBottles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1156#1195#0" expanded="true" />
-            <element signature="e#1233#1280#0" expanded="true" />
-            <element signature="e#2787#2823#0" expanded="true" />
-            <element signature="e#2894#2936#0" expanded="true" />
+            <element signature="e#2954#2962#0" expanded="true" />
+            <element signature="e#3183#3191#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2249,7 +2176,7 @@
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#801#832#0" expanded="true" />
+            <element signature="e#1186#1217#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2259,7 +2186,24 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2328#2356#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2909#2937#0" expanded="true" />
+            <element signature="e#2977#3011#0" expanded="true" />
+            <element signature="e#3911#3942#0" expanded="true" />
+            <element signature="e#3983#4022#0" expanded="true" />
+            <element signature="e#4246#4280#0" expanded="true" />
+            <element signature="e#4402#4442#0" expanded="true" />
+            <element signature="e#5807#5832#0" expanded="true" />
+            <element signature="e#5874#5903#0" expanded="true" />
+            <element signature="e#5944#5966#0" expanded="true" />
+            <element signature="e#5968#6206#0" expanded="true" />
+            <element signature="e#6205#6206#0" expanded="true" />
+            <element signature="e#6879#6910#0" expanded="true" />
+            <element signature="e#6951#6990#0" expanded="true" />
+            <element signature="e#7189#7226#0" expanded="true" />
+            <element signature="e#7630#7667#0" expanded="true" />
+            <element signature="e#7773#7812#0" expanded="true" />
+            <element signature="e#7988#8038#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2278,20 +2222,8 @@
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/web/DownloadBottles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1156#1195#0" expanded="true" />
-            <element signature="e#1233#1280#0" expanded="true" />
-            <element signature="e#2787#2823#0" expanded="true" />
-            <element signature="e#2894#2936#0" expanded="true" />
+            <element signature="e#2954#2962#0" expanded="true" />
+            <element signature="e#3183#3191#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2304,12 +2236,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/web/WebAppConnection.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/web/WebHelperClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="68" column="68" selection-start-line="68" selection-start-column="68" selection-end-line="68" selection-end-column="68" />
           <folding>
-            <element signature="e#1911#1919#0" expanded="true" />
+            <element signature="e#1834#1842#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2319,7 +2251,24 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
-            <element signature="e#2328#2356#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2909#2937#0" expanded="true" />
+            <element signature="e#2977#3011#0" expanded="true" />
+            <element signature="e#3911#3942#0" expanded="true" />
+            <element signature="e#3983#4022#0" expanded="true" />
+            <element signature="e#4246#4280#0" expanded="true" />
+            <element signature="e#4402#4442#0" expanded="true" />
+            <element signature="e#5807#5832#0" expanded="true" />
+            <element signature="e#5874#5903#0" expanded="true" />
+            <element signature="e#5944#5966#0" expanded="true" />
+            <element signature="e#5968#6206#0" expanded="true" />
+            <element signature="e#6205#6206#0" expanded="true" />
+            <element signature="e#6879#6910#0" expanded="true" />
+            <element signature="e#6951#6990#0" expanded="true" />
+            <element signature="e#7189#7226#0" expanded="true" />
+            <element signature="e#7630#7667#0" expanded="true" />
+            <element signature="e#7773#7812#0" expanded="true" />
+            <element signature="e#7988#8038#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2336,7 +2285,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="136" column="45" selection-start-line="136" selection-start-column="45" selection-end-line="136" selection-end-column="45" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3268#3572#0" expanded="false" />
+            <element signature="e#3571#3572#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2359,7 +2312,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/web/WebAppConnection.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/web/WebHelperClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2388,66 +2341,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/import-summary.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44320297">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/java/constants/StringConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/model/Bottle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="13" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/model/BottleImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/show_all_bottles_layout.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2458,39 +2355,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_delete_bottle.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/show_bottle_layout.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38877338">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/ShowAllBottlesActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78752434">
-          <caret line="67" column="83" selection-start-line="67" selection-start-column="83" selection-end-line="67" selection-end-column="83" />
+        <state vertical-scroll-proportion="0.6653543">
+          <caret line="266" column="48" selection-start-line="266" selection-start-column="48" selection-end-line="266" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -2500,117 +2371,244 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33268103">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="21" selection-end-column="37" />
-          <folding>
-            <element signature="e#700#723#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.98333335">
-          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.6653543">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/web/WebAppConnection.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/add_bottle_layout.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0462964">
-          <caret line="86" column="69" selection-start-line="86" selection-start-column="69" selection-end-line="86" selection-end-column="69" />
+        <state vertical-scroll-proportion="-3.4507873">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_delete_bottle.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36811024">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/model/BottleImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="e#1911#1919#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#383#410#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/web/WebHelperClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1834#1842#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/org/catalog/android/client/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.25926">
+          <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/ShowBottleActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="63" selection-start-line="79" selection-start-column="8" selection-end-line="80" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2909#2937#0" expanded="true" />
+            <element signature="e#2977#3011#0" expanded="true" />
+            <element signature="e#3911#3942#0" expanded="true" />
+            <element signature="e#3983#4022#0" expanded="true" />
+            <element signature="e#4246#4280#0" expanded="true" />
+            <element signature="e#4402#4442#0" expanded="true" />
+            <element signature="e#5807#5832#0" expanded="true" />
+            <element signature="e#5874#5903#0" expanded="true" />
+            <element signature="e#5944#5966#0" expanded="true" />
+            <element signature="e#5968#6206#0" expanded="true" />
+            <element signature="e#6205#6206#0" expanded="true" />
+            <element signature="e#6879#6910#0" expanded="true" />
+            <element signature="e#6951#6990#0" expanded="true" />
+            <element signature="e#7189#7226#0" expanded="true" />
+            <element signature="e#7630#7667#0" expanded="true" />
+            <element signature="e#7773#7812#0" expanded="true" />
+            <element signature="e#7988#8038#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/AddBottleActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3611112">
-          <caret line="168" column="62" selection-start-line="168" selection-start-column="62" selection-end-line="168" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="184" column="71" selection-start-line="184" selection-start-column="71" selection-end-line="184" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3149#3193#0" expanded="true" />
+            <element signature="e#3278#3327#0" expanded="true" />
+            <element signature="e#4228#6831#0" expanded="true" />
+            <element signature="e#5572#5603#0" expanded="true" />
+            <element signature="e#6065#6102#0" expanded="true" />
+            <element signature="e#6685#6710#0" expanded="true" />
+            <element signature="e#6740#6779#0" expanded="true" />
+            <element signature="e#6830#6831#0" expanded="true" />
+            <element signature="e#7087#7136#0" expanded="true" />
+            <element signature="e#8102#8125#0" expanded="true" />
+            <element signature="e#8198#8232#0" expanded="true" />
+            <element signature="e#8254#8292#0" expanded="true" />
+            <element signature="e#8386#8418#0" expanded="true" />
+            <element signature="e#8440#8477#0" expanded="true" />
+            <element signature="e#8816#8838#0" expanded="true" />
+            <element signature="e#8840#9338#0" expanded="true" />
+            <element signature="e#9196#9245#0" expanded="true" />
+            <element signature="e#9337#9338#0" expanded="true" />
+            <element signature="e#9749#9780#0" expanded="true" />
+            <element signature="e#9821#9856#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/model/Bottle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2746#2754#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.2666667">
+          <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/show_bottle_layout.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7338552">
-          <caret line="266" column="47" selection-start-line="266" selection-start-column="47" selection-end-line="266" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
           <folding>
-            <element signature="e#774#787#0" expanded="true" />
-            <element signature="e#1305#1328#0" expanded="true" />
-            <element signature="e#1855#1873#0" expanded="true" />
-            <element signature="e#2396#2414#0" expanded="true" />
-            <element signature="e#2937#2951#0" expanded="true" />
-            <element signature="e#3470#3486#0" expanded="true" />
-            <element signature="e#4007#4022#0" expanded="true" />
-            <element signature="e#4542#4558#0" expanded="true" />
-            <element signature="e#5079#5096#0" expanded="true" />
-            <element signature="e#5618#5637#0" expanded="true" />
-            <element signature="e#6161#6184#0" expanded="true" />
-            <element signature="e#6712#6727#0" expanded="true" />
-            <element signature="e#7247#7265#0" expanded="true" />
-            <element signature="e#7788#7803#0" expanded="true" />
-            <element signature="e#8323#8343#0" expanded="true" />
-            <element signature="e#8842#8864#0" expanded="true" />
-            <element signature="e#9145#9168#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#892#918#0" expanded="true" />
+            <element signature="e#1120#1519#0" expanded="true" />
+            <element signature="e#1518#1519#0" expanded="true" />
+            <element signature="e#1650#2052#0" expanded="true" />
+            <element signature="e#2051#2052#0" expanded="true" />
+            <element signature="e#2189#2457#0" expanded="true" />
+            <element signature="e#2456#2457#0" expanded="true" />
+            <element signature="e#3061#3090#0" expanded="true" />
+            <element signature="e#3147#3181#0" expanded="true" />
+            <element signature="e#3620#3642#0" expanded="true" />
+            <element signature="e#3849#3873#0" expanded="true" />
+            <element signature="e#3981#4005#0" expanded="true" />
+            <element signature="e#4175#4205#0" expanded="true" />
+            <element signature="e#4383#4409#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/web/DownloadBottles.java">
+    <entry file="file://$PROJECT_DIR$/local.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53518516">
-          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44320297">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/show_all_bottles_layout.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13385826">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/ShowAllBottlesActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6014898">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1156#1195#0" expanded="true" />
-            <element signature="e#1233#1280#0" expanded="true" />
-            <element signature="e#2787#2823#0" expanded="true" />
-            <element signature="e#2894#2936#0" expanded="true" />
+            <element signature="e#2954#2962#0" expanded="true" />
+            <element signature="e#3183#3191#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2">
+          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/DeleteBottleActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6537037">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        <state vertical-scroll-proportion="-0.48789573">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#801#832#0" expanded="true" />
+            <element signature="e#3173#3181#0" expanded="true" />
+            <element signature="e#3402#3410#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/catalog/android/client/ShowBottleActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72407407">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-          <folding>
-            <element signature="e#2328#2356#0" expanded="true" />
-            <element signature="e#2410#2444#0" expanded="true" />
-            <element signature="e#2826#3258#0" expanded="true" />
-            <element signature="e#3062#3093#0" expanded="true" />
-            <element signature="e#3138#3177#0" expanded="true" />
-            <element signature="e#3257#3258#0" expanded="true" />
-            <element signature="e#3470#3797#0" expanded="true" />
-            <element signature="e#3796#3797#0" expanded="true" />
-            <element signature="e#4007#4041#0" expanded="true" />
-            <element signature="e#4173#4213#0" expanded="true" />
-            <element signature="e#6070#6095#0" expanded="true" />
-            <element signature="e#6149#6178#0" expanded="true" />
-            <element signature="e#6231#6253#0" expanded="true" />
-            <element signature="e#7012#7306#0" expanded="true" />
-            <element signature="e#7163#7200#0" expanded="true" />
-            <element signature="e#7305#7306#0" expanded="true" />
-            <element signature="e#7332#7369#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.66108006">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>

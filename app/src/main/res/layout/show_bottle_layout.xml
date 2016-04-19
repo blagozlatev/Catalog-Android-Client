@@ -260,6 +260,7 @@
             android:contentDescription="@string/bottle_image"
             android:scaleType="centerInside" />
 
+        <!--suppress AndroidMissingOnClickHandler -->
         <Button
             android:id="@+id/btnDeleteBottle"
             android:layout_width="fill_parent"

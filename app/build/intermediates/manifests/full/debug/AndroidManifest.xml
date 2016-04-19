@@ -40,7 +40,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="org.catalog.android.client.ShowAllBottlesActivity"
-            android:label="@string/add_bottle"
+            android:label="@string/show_all_bottles"
             android:screenOrientation="portrait" />
         <activity
             android:name="org.catalog.android.client.DeleteBottleActivity"

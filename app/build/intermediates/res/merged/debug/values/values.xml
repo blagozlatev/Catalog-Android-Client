@@ -36,10 +36,12 @@
     <string name="delete_successful">Delete Successful</string>
     <string name="delete_unsuccessful">Delete Unsuccessful</string>
     <string name="enter_bottle_id">Enter bottle ID!</string>
+    <string name="enter_username">Username</string>
     <string name="error">Error!</string>
     <string name="getting_bottle_info">Getting bottle info!</string>
     <string name="id">ID</string>
     <string name="id_">"ID: "</string>
+    <string name="isAuth">isAuth</string>
     <string name="isBottleDelete">isBottleDelete</string>
     <string name="manufacturer">Manufacturer</string>
     <string name="manufacturer_">"Manufacturer: "</string>
@@ -53,6 +55,7 @@
     <string name="ok">OK</string>
     <string name="one">1</string>
     <string name="parse_error_message">Age or ID is not a number!</string>
+    <string name="pass">pass</string>
     <string name="please_enter_bottle_id">Please enter bottle ID.</string>
     <string name="please_wait">Please wait!</string>
     <string name="select_image">Select Image</string>
@@ -73,6 +76,9 @@
     <string name="url_get_bottle_image">http://bottlewebapp.apphb.com/Serialized/GetImageBase/</string>
     <string name="url_web_app">http://bottlewebapp.apphb.com/Serialized/Post</string>
     <string name="url_web_app_image">http://bottlewebapp.apphb.com/Serialized/PostImage/</string>
+    <string name="user">user</string>
+    <string name="user_auth">Please log in</string>
+    <string name="wrong_user">Wrong username or password!</string>
     <string name="zero">0</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

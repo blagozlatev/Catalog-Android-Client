@@ -407,14 +407,7 @@
                     "endOffset": 1893
                 },
                 "from": {
-                    "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 68,
-                        "startColumn": 4,
-                        "startOffset": 3679,
-                        "endColumn": 63,
-                        "endOffset": 3738
-                    }
+                    "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -426,14 +419,7 @@
                     "endOffset": 1961
                 },
                 "from": {
-                    "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 69,
-                        "startColumn": 4,
-                        "startOffset": 3744,
-                        "endColumn": 67,
-                        "endOffset": 3807
-                    }
+                    "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -453,8 +439,8 @@
                     "startLine": 38,
                     "startColumn": 4,
                     "startOffset": 2027,
-                    "endColumn": 40,
-                    "endOffset": 2063
+                    "endColumn": 51,
+                    "endOffset": 2074
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -464,9 +450,9 @@
                 "to": {
                     "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 2068,
-                    "endColumn": 68,
-                    "endOffset": 2132
+                    "startOffset": 2079,
+                    "endColumn": 40,
+                    "endOffset": 2115
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -476,9 +462,9 @@
                 "to": {
                     "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 2137,
-                    "endColumn": 33,
-                    "endOffset": 2166
+                    "startOffset": 2120,
+                    "endColumn": 68,
+                    "endOffset": 2184
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -488,9 +474,9 @@
                 "to": {
                     "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 2171,
-                    "endColumn": 38,
-                    "endOffset": 2205
+                    "startOffset": 2189,
+                    "endColumn": 33,
+                    "endOffset": 2218
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -500,9 +486,9 @@
                 "to": {
                     "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 2210,
-                    "endColumn": 57,
-                    "endOffset": 2263
+                    "startOffset": 2223,
+                    "endColumn": 38,
+                    "endOffset": 2257
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -512,21 +498,28 @@
                 "to": {
                     "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 2268,
-                    "endColumn": 53,
-                    "endOffset": 2317
+                    "startOffset": 2262,
+                    "endColumn": 41,
+                    "endOffset": 2299
                 },
                 "from": {
-                    "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 75,
+                        "startColumn": 4,
+                        "startOffset": 4065,
+                        "endColumn": 41,
+                        "endOffset": 4102
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 2322,
-                    "endColumn": 58,
-                    "endOffset": 2376
+                    "startOffset": 2304,
+                    "endColumn": 57,
+                    "endOffset": 2357
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -536,9 +529,9 @@
                 "to": {
                     "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 2381,
-                    "endColumn": 45,
-                    "endOffset": 2422
+                    "startOffset": 2362,
+                    "endColumn": 53,
+                    "endOffset": 2411
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -548,9 +541,9 @@
                 "to": {
                     "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 2427,
-                    "endColumn": 50,
-                    "endOffset": 2473
+                    "startOffset": 2416,
+                    "endColumn": 58,
+                    "endOffset": 2470
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -560,9 +553,9 @@
                 "to": {
                     "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 2478,
-                    "endColumn": 37,
-                    "endOffset": 2511
+                    "startOffset": 2475,
+                    "endColumn": 45,
+                    "endOffset": 2516
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -572,9 +565,9 @@
                 "to": {
                     "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 2516,
-                    "endColumn": 42,
-                    "endOffset": 2554
+                    "startOffset": 2521,
+                    "endColumn": 50,
+                    "endOffset": 2567
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -584,9 +577,9 @@
                 "to": {
                     "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 2559,
-                    "endColumn": 56,
-                    "endOffset": 2611
+                    "startOffset": 2572,
+                    "endColumn": 37,
+                    "endOffset": 2605
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -596,9 +589,9 @@
                 "to": {
                     "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 2616,
-                    "endColumn": 37,
-                    "endOffset": 2649
+                    "startOffset": 2610,
+                    "endColumn": 42,
+                    "endOffset": 2648
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -608,9 +601,9 @@
                 "to": {
                     "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 2654,
-                    "endColumn": 42,
-                    "endOffset": 2692
+                    "startOffset": 2653,
+                    "endColumn": 56,
+                    "endOffset": 2705
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -620,9 +613,9 @@
                 "to": {
                     "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 2697,
-                    "endColumn": 33,
-                    "endOffset": 2726
+                    "startOffset": 2710,
+                    "endColumn": 37,
+                    "endOffset": 2743
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -632,9 +625,9 @@
                 "to": {
                     "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 2731,
-                    "endColumn": 33,
-                    "endOffset": 2760
+                    "startOffset": 2748,
+                    "endColumn": 42,
+                    "endOffset": 2786
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -644,9 +637,9 @@
                 "to": {
                     "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 2765,
-                    "endColumn": 74,
-                    "endOffset": 2835
+                    "startOffset": 2791,
+                    "endColumn": 33,
+                    "endOffset": 2820
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -656,9 +649,9 @@
                 "to": {
                     "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 2840,
-                    "endColumn": 74,
-                    "endOffset": 2910
+                    "startOffset": 2825,
+                    "endColumn": 33,
+                    "endOffset": 2854
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -668,9 +661,9 @@
                 "to": {
                     "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 2915,
-                    "endColumn": 52,
-                    "endOffset": 2963
+                    "startOffset": 2859,
+                    "endColumn": 74,
+                    "endOffset": 2929
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -680,9 +673,9 @@
                 "to": {
                     "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 2968,
-                    "endColumn": 53,
-                    "endOffset": 3017
+                    "startOffset": 2934,
+                    "endColumn": 37,
+                    "endOffset": 2967
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -692,9 +685,9 @@
                 "to": {
                     "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 3022,
-                    "endColumn": 60,
-                    "endOffset": 3078
+                    "startOffset": 2972,
+                    "endColumn": 74,
+                    "endOffset": 3042
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -704,9 +697,9 @@
                 "to": {
                     "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 3083,
-                    "endColumn": 51,
-                    "endOffset": 3130
+                    "startOffset": 3047,
+                    "endColumn": 52,
+                    "endOffset": 3095
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -716,9 +709,9 @@
                 "to": {
                     "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 3135,
-                    "endColumn": 44,
-                    "endOffset": 3175
+                    "startOffset": 3100,
+                    "endColumn": 53,
+                    "endOffset": 3149
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -728,9 +721,9 @@
                 "to": {
                     "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 3180,
-                    "endColumn": 62,
-                    "endOffset": 3238
+                    "startOffset": 3154,
+                    "endColumn": 60,
+                    "endOffset": 3210
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -740,9 +733,9 @@
                 "to": {
                     "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 3243,
-                    "endColumn": 54,
-                    "endOffset": 3293
+                    "startOffset": 3215,
+                    "endColumn": 51,
+                    "endOffset": 3262
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -752,9 +745,9 @@
                 "to": {
                     "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 3298,
-                    "endColumn": 39,
-                    "endOffset": 3333
+                    "startOffset": 3267,
+                    "endColumn": 44,
+                    "endOffset": 3307
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -764,9 +757,9 @@
                 "to": {
                     "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 3338,
-                    "endColumn": 44,
-                    "endOffset": 3378
+                    "startOffset": 3312,
+                    "endColumn": 62,
+                    "endOffset": 3370
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -776,9 +769,9 @@
                 "to": {
                     "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 3383,
-                    "endColumn": 39,
-                    "endOffset": 3418
+                    "startOffset": 3375,
+                    "endColumn": 54,
+                    "endOffset": 3425
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -788,9 +781,9 @@
                 "to": {
                     "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 3423,
-                    "endColumn": 44,
-                    "endOffset": 3463
+                    "startOffset": 3430,
+                    "endColumn": 39,
+                    "endOffset": 3465
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -800,9 +793,9 @@
                 "to": {
                     "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 3468,
-                    "endColumn": 61,
-                    "endOffset": 3525
+                    "startOffset": 3470,
+                    "endColumn": 44,
+                    "endOffset": 3510
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -812,9 +805,9 @@
                 "to": {
                     "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 3530,
-                    "endColumn": 51,
-                    "endOffset": 3577
+                    "startOffset": 3515,
+                    "endColumn": 39,
+                    "endOffset": 3550
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -824,9 +817,9 @@
                 "to": {
                     "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 3582,
-                    "endColumn": 77,
-                    "endOffset": 3655
+                    "startOffset": 3555,
+                    "endColumn": 44,
+                    "endOffset": 3595
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -836,9 +829,9 @@
                 "to": {
                     "startLine": 70,
                     "startColumn": 4,
-                    "startOffset": 3660,
-                    "endColumn": 92,
-                    "endOffset": 3748
+                    "startOffset": 3600,
+                    "endColumn": 61,
+                    "endOffset": 3657
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -848,9 +841,9 @@
                 "to": {
                     "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 3753,
-                    "endColumn": 90,
-                    "endOffset": 3839
+                    "startOffset": 3662,
+                    "endColumn": 51,
+                    "endOffset": 3709
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -860,9 +853,9 @@
                 "to": {
                     "startLine": 72,
                     "startColumn": 4,
-                    "startOffset": 3844,
-                    "endColumn": 103,
-                    "endOffset": 3943
+                    "startOffset": 3714,
+                    "endColumn": 77,
+                    "endOffset": 3787
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -872,9 +865,9 @@
                 "to": {
                     "startLine": 73,
                     "startColumn": 4,
-                    "startOffset": 3948,
-                    "endColumn": 85,
-                    "endOffset": 4029
+                    "startOffset": 3792,
+                    "endColumn": 92,
+                    "endOffset": 3880
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -884,9 +877,9 @@
                 "to": {
                     "startLine": 74,
                     "startColumn": 4,
-                    "startOffset": 4034,
-                    "endColumn": 97,
-                    "endOffset": 4127
+                    "startOffset": 3885,
+                    "endColumn": 90,
+                    "endOffset": 3971
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -896,9 +889,9 @@
                 "to": {
                     "startLine": 75,
                     "startColumn": 4,
-                    "startOffset": 4132,
-                    "endColumn": 34,
-                    "endOffset": 4162
+                    "startOffset": 3976,
+                    "endColumn": 103,
+                    "endOffset": 4075
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
@@ -908,10 +901,82 @@
                 "to": {
                     "startLine": 76,
                     "startColumn": 4,
-                    "startOffset": 4167,
-                    "endLine": 82,
+                    "startOffset": 4080,
+                    "endColumn": 85,
+                    "endOffset": 4161
+                },
+                "from": {
+                    "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 77,
+                    "startColumn": 4,
+                    "startOffset": 4166,
+                    "endColumn": 97,
+                    "endOffset": 4259
+                },
+                "from": {
+                    "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 78,
+                    "startColumn": 4,
+                    "startOffset": 4264,
+                    "endColumn": 37,
+                    "endOffset": 4297
+                },
+                "from": {
+                    "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 79,
+                    "startColumn": 4,
+                    "startOffset": 4302,
+                    "endColumn": 51,
+                    "endOffset": 4349
+                },
+                "from": {
+                    "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 80,
+                    "startColumn": 4,
+                    "startOffset": 4354,
+                    "endColumn": 66,
+                    "endOffset": 4416
+                },
+                "from": {
+                    "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 81,
+                    "startColumn": 4,
+                    "startOffset": 4421,
+                    "endColumn": 34,
+                    "endOffset": 4451
+                },
+                "from": {
+                    "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 82,
+                    "startColumn": 4,
+                    "startOffset": 4456,
+                    "endLine": 88,
                     "endColumn": 12,
-                    "endOffset": 4453
+                    "endOffset": 4742
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\styles.xml"
@@ -919,12 +984,12 @@
             },
             {
                 "to": {
-                    "startLine": 83,
+                    "startLine": 89,
                     "startColumn": 4,
-                    "startOffset": 4458,
-                    "endLine": 85,
+                    "startOffset": 4747,
+                    "endLine": 91,
                     "endColumn": 12,
-                    "endOffset": 4613
+                    "endOffset": 4902
                 },
                 "from": {
                     "file": "C:\\Users\\Blagovest Zlatev\\Documents\\StudioProjects\\Catalog-Android-Client\\app\\src\\main\\res\\values\\styles.xml"

@@ -68,5 +68,11 @@
     <string name="url_delete_bottle">http://bottlewebapp.apphb.com/Database/Delete/</string>
     <string name="delete_successful">Delete Successful</string>
     <string name="delete_unsuccessful">Delete Unsuccessful</string>
+    <string name="user_auth">Please log in</string>
+    <string name="enter_username">Username</string>
+    <string name="user">user</string>
+    <string name="pass">pass</string>
+    <string name="wrong_user">Wrong username or password!</string>
+    <string name="isAuth">isAuth</string>
 
 </resources>

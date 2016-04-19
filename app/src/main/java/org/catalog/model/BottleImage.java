@@ -2,33 +2,33 @@ package org.catalog.model;
 
 import java.io.ByteArrayOutputStream;
 import java.net.URI;
-import java.net.URISyntaxException;
 
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.CompressFormat;
 import android.graphics.BitmapFactory;
 import android.util.Base64;
-import android.util.Log;
 
 public class BottleImage {
     private Bitmap image;
     private int bottleId;
     private URI postImageUrl;
 
-    public BottleImage() {
-        image = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888);
-        bottleId = 0;
-        try {
-            postImageUrl = new URI("");
-        } catch (URISyntaxException ex) {
-            Log.d("Image URL","Image URL was not initialized");
-        }
+    public BottleImage(){
+
     }
 
+    @SuppressWarnings("unused")
     public BottleImage(Bitmap bi, int bid, URI uri) {
         image = bi;
         bottleId = bid;
         postImageUrl = uri;
+    }
+
+    public BottleImage(String responseString, int id, URI url) {
+        setBitmapBase64Decode(responseString);
+        bottleId = id;
+        postImageUrl = url;
+
     }
 
     public Bitmap getImage() {
@@ -39,6 +39,7 @@ public class BottleImage {
         this.image = image;
     }
 
+    @SuppressWarnings("unused")
     public int getBottleId() {
         return bottleId;
     }
